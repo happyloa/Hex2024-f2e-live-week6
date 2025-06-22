@@ -12,5 +12,17 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxt/content", "@nuxt/fonts", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/content", "@nuxtjs/google-fonts", "@nuxtjs/tailwindcss"],
+
+  // Google Fonts 的相關配置
+  googleFonts: {
+    families: {
+      "Noto+Serif+TC": [600, 700, 900],
+    },
+    download: true,
+    inject: true,
+    display: "swap",
+  },
+
+  css: ["~/assets/css/fonts.css"],
 });
