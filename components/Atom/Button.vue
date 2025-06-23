@@ -84,7 +84,7 @@ const btnClass = computed(() => {
   <NuxtLink
     :to="to"
     :target="target"
-    class="rounded-full transition flex justify-center duration-300"
+    class="rounded-full transition flex justify-center duration-300 whitespace-nowrap"
     :class="btnClass"
     :aria-disabled="disabled"
     tabindex="0"
