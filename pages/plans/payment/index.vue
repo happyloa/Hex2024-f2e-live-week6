@@ -214,11 +214,17 @@ useSeoMeta({
               >NT 1,188</span
             >
           </div>
-          <AtomButton text="立即付款" hasIcon class="hidden md:flex" />
+          <AtomButton
+            text="立即付款"
+            hasIcon
+            to="/plans/payment/completed"
+            class="hidden md:flex"
+          />
           <AtomButton
             text="立即付款"
             hasIcon
             size="sm"
+            to="/plans/payment/completed"
             class="flex md:hidden"
           />
         </aside>
