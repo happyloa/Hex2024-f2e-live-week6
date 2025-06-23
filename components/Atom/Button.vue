@@ -91,7 +91,7 @@ const btnClass = computed(() => {
   >
     {{ text }}
     <svg v-if="hasIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" :class="size === 'lg' ? 'size-6' : 'size-5'">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12" fill="#fff"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12" :fill="intent === 'green' ? '#ffffff' : '#6C757D'"/>
     </svg>
   </NuxtLink>
 </template>
