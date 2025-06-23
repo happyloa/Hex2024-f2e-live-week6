@@ -18,7 +18,7 @@ useSeoMeta({
       <p class="mb-2 text-h6 font-bold sm:mb-3 sm:text-h5 sm:font-black">
         獻給新世代的生活風格誌
       </p>
-      <h1 class="text-h1-sm mb-5 font-black sm:mb-6 sm:text-h1">
+      <h1 class="mb-5 text-h1-sm font-black sm:mb-6 sm:text-h1">
         一起探索生活的無限可能
       </h1>
       <AtomButton text="馬上訂閱" to="/plans" hasIcon />
