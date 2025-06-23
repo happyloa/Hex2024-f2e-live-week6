@@ -1,3 +1,7 @@
 html {
-  font-family: "Noto Serif TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
+}
+
+.Newsreader {
+  font-family: "Newsreader", serif;
 }
