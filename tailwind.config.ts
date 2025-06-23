@@ -16,7 +16,6 @@ export default <Partial<Config>>{
           "300": "#406C55",
         },
         neutral: {
-          white: "#FFFFFF",
           "100": "#F8F9FA",
           "200": "#DEE2E6",
           "300": "#ADB5BD",
