@@ -39,8 +39,22 @@ export default <Partial<Config>>{
             letterSpacing: "0.1em",
           },
         ],
+        "h1-sm": [
+          "1.75rem",
+          {
+            lineHeight: "1.2",
+            letterSpacing: "0.1em",
+          },
+        ],
         h2: [
           "2rem",
+          {
+            lineHeight: "1.2",
+            letterSpacing: "0.1em",
+          },
+        ],
+        "h2-sm": [
+          "1.5rem",
           {
             lineHeight: "1.2",
             letterSpacing: "0.1em",
@@ -55,6 +69,13 @@ export default <Partial<Config>>{
         ],
         h4: [
           "1.5rem",
+          {
+            lineHeight: "1.2",
+            letterSpacing: "0.1em",
+          },
+        ],
+        "h4-sm": [
+          "1.25rem",
           {
             lineHeight: "1.2",
             letterSpacing: "0.1em",
