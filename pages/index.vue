@@ -1,4 +1,5 @@
 <template>
+  <!-- Hero 區塊 -->
   <section class="h-screen py-0 sm:py-20">
     <div
       class="mx-auto flex h-full max-w-[1296px] flex-col items-center justify-end bg-[url(/images/mobile/home/banner.webp)] bg-cover bg-center bg-no-repeat px-5 py-12 text-center text-white sm:items-start sm:justify-center sm:bg-[url(/images/desktop/home/banner.webp)] sm:px-[60px]"
@@ -9,7 +10,7 @@
       <h1 class="text-h1-sm mb-5 font-black sm:mb-6 sm:text-h1">
         一起探索生活的無限可能
       </h1>
-      <AtomButton text="馬上訂閱" to="plans" hasIcon />
+      <AtomButton text="馬上訂閱" to="/plans" hasIcon />
     </div>
   </section>
 </template>
