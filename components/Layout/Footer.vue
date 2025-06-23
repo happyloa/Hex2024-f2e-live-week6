@@ -1,5 +1,6 @@
 <template>
-  <section class="px-5 py-12 md:py-20">
+  <!-- 只有在首頁才顯示這塊 -->
+  <section v-if="$route.path === '/'" class="px-5 py-12 md:py-20">
     <div
       class="mx-auto flex max-w-[1296px] flex-col items-center justify-between gap-4 text-center text-neutral-500 md:flex-row md:items-start"
     >
