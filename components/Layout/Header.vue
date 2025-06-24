@@ -97,8 +97,22 @@ const showMobileNav = ref(false);
 
     <ul class="mb-10 flex flex-col gap-6 text-h6 font-bold text-neutral-500">
       <li><NuxtLink to="/" class="block p-3">所有文章</NuxtLink></li>
-      <li><NuxtLink to="/plans" class="block p-3">訂閱方案</NuxtLink></li>
-      <li><NuxtLink to="/about" class="block p-3">關於我們</NuxtLink></li>
+      <li>
+        <NuxtLink
+          to="/plans"
+          class="block p-3"
+          :class="$route.path.includes('plans') ? 'text-accent-200' : ''"
+          >訂閱方案</NuxtLink
+        >
+      </li>
+      <li>
+        <NuxtLink
+          to="/about"
+          class="block p-3"
+          :class="$route.path.includes('about') ? 'text-accent-200' : ''"
+          >關於我們</NuxtLink
+        >
+      </li>
     </ul>
 
     <AtomButton to="/login" size="sm" text="登入 / 註冊">
