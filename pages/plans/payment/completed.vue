@@ -2,10 +2,6 @@
 useSeoMeta({
   title: "付款成功 | 2024 切版直播班 - 內容訂閱網站",
   ogTitle: "付款成功 | 2024 切版直播班 - 內容訂閱網站",
-  description: `vivre 這個品牌名稱源自法語,意為"生活"、"活著"。它象徵著我們對於高品質生活的熱愛與追求。vivre 旨在成為一個分享美好生活體驗、發掘生活質感的平台。`,
-  ogDescription: `vivre 這個品牌名稱源自法語,意為"生活"、"活著"。它象徵著我們對於高品質生活的熱愛與追求。vivre 旨在成為一個分享美好生活體驗、發掘生活質感的平台。`,
-  ogImage: "/ogImage.webp",
-  twitterCard: "/ogImage.webp",
 });
 </script>
 
