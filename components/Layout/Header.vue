@@ -37,22 +37,36 @@ const showMobileNav = ref(false);
         </div>
       </div>
       <nav class="hidden lg:block">
-        <ul class="flex gap-5 text-h6 font-bold text-neutral-500">
+        <ul class="flex items-center gap-5 text-h6 font-bold text-neutral-500">
           <li>
-            <NuxtLink to="#" class="px-5 py-2">所有文章</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/plans" class="px-5 py-2">訂閱方案</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about" class="px-5 py-2">關於我們</NuxtLink>
+            <NuxtLink
+              to="#"
+              class="px-5 py-2 transition duration-300 hover:text-accent-200"
+              >所有文章</NuxtLink
+            >
           </li>
           <li>
             <NuxtLink
-              to="/login"
-              class="rounded-full bg-accent-200 px-6 py-4 text-white"
-              >登入 / 註冊</NuxtLink
+              to="/plans"
+              class="px-5 py-2 transition duration-300 hover:text-accent-200"
+              :class="$route.path.includes('plans') ? 'text-accent-200' : ''"
+              >訂閱方案</NuxtLink
             >
+          </li>
+          <li>
+            <NuxtLink
+              to="/about"
+              class="px-5 py-2 transition duration-300 hover:text-accent-200"
+              :class="$route.path.includes('about') ? 'text-accent-200' : ''"
+              >關於我們</NuxtLink
+            >
+          </li>
+          <li>
+            <AtomButton
+              to="/login"
+              text="登入 / 註冊"
+              class="!text-h6 font-bold"
+            />
           </li>
         </ul>
       </nav>
