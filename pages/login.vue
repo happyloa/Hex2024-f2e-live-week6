@@ -49,14 +49,14 @@ useSeoMeta({
           type="button"
           class="flex justify-center gap-3 rounded-full bg-neutral-100 p-3 text-h6 font-bold text-neutral-500"
         >
-          <img src="/public/icons/google.webp" alt="Google 登入" />
+          <img src="/icons/google.webp" alt="Google 登入" />
           使用 Google 登入
         </button>
         <button
           type="button"
           class="flex justify-center gap-3 rounded-full bg-neutral-100 p-3 text-h6 font-bold text-neutral-500"
         >
-          <img src="/public/icons/facebook.webp" alt="Facebook 登入" />
+          <img src="/icons/facebook.webp" alt="Facebook 登入" />
           使用 Facebook 登入
         </button>
       </div>

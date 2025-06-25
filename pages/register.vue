@@ -60,14 +60,14 @@ useSeoMeta({
           type="button"
           class="flex justify-center gap-3 rounded-full bg-neutral-100 p-3 text-h6 font-bold text-neutral-500"
         >
-          <img src="/public/icons/google.webp" alt="Google 註冊" />
+          <img src="/icons/google.webp" alt="Google 註冊" />
           使用 Google 註冊
         </button>
         <button
           type="button"
           class="flex justify-center gap-3 rounded-full bg-neutral-100 p-3 text-h6 font-bold text-neutral-500"
         >
-          <img src="/public/icons/facebook.webp" alt="Facebook 註冊" />
+          <img src="/icons/facebook.webp" alt="Facebook 註冊" />
           使用 Facebook 註冊
         </button>
       </div>

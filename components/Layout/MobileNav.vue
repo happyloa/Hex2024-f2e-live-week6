@@ -35,7 +35,7 @@ watch(route, () => close());
           aria-label="關閉導覽選單"
           @click="close"
         >
-          <img src="/public/icons/x.webp" alt="關閉 icon" />
+          <img src="/icons/x.webp" alt="關閉 icon" />
         </button>
 
         <slot />

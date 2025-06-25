@@ -13,13 +13,9 @@ const showMobileNav = ref(false);
             <picture>
               <source
                 media="(max-width: 640px)"
-                srcset="/public/images/logo-sm.webp"
+                srcset="/images/logo-sm.webp"
               />
-              <img
-                src="/public/images/logo.webp"
-                alt="網站 Logo"
-                loading="lazy"
-              />
+              <img src="/images/logo.webp" alt="網站 Logo" />
             </picture>
           </figure>
         </NuxtLink>
@@ -30,7 +26,7 @@ const showMobileNav = ref(false);
             placeholder="搜尋文章"
           />
           <img
-            src="/public/icons/search.webp"
+            src="/icons/search.webp"
             alt="搜尋 icon"
             class="absolute right-5 top-1/2 -translate-y-1/2 cursor-pointer"
           />
@@ -75,7 +71,7 @@ const showMobileNav = ref(false);
         class="block p-3 lg:hidden"
         @click="showMobileNav = true"
       >
-        <img src="/public/icons/menu.webp" alt="漢堡選單" />
+        <img src="/icons/menu.webp" alt="漢堡選單" />
       </button>
     </div>
   </header>
@@ -89,7 +85,7 @@ const showMobileNav = ref(false);
         placeholder="搜尋文章"
       />
       <img
-        src="/public/icons/search.webp"
+        src="/icons/search.webp"
         alt="搜尋 icon"
         class="absolute right-5 top-1/2 -translate-y-1/2"
       />
