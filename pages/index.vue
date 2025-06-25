@@ -17,7 +17,14 @@ useSeoMeta({
       <h1 class="mb-5 text-h1-sm font-black sm:mb-6 sm:text-h1">
         一起探索生活的無限可能
       </h1>
-      <AtomButton text="馬上訂閱" to="/plans" hasIcon />
+      <AtomButton text="馬上訂閱" to="/plans" hasIcon class="hidden md:flex" />
+      <AtomButton
+        size="sm"
+        text="馬上訂閱"
+        to="/plans"
+        hasIcon
+        class="flex md:hidden"
+      />
     </div>
   </section>
   <!-- 熱門主題 -->
