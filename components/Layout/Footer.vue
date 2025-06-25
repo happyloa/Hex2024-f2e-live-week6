@@ -7,7 +7,8 @@
       <h3 class="text-h2-sm font-black md:text-h2">想看什麼主題由你決定！</h3>
       <div class="flex flex-col items-center gap-9 md:items-end md:gap-4">
         <p class="text-h4-sm font-bold md:text-h4">歡迎投稿與我們分享</p>
-        <AtomButton text="聯絡我們" />
+        <AtomButton text="聯絡我們" class="hidden md:block" />
+        <AtomButton size="sm" text="聯絡我們" class="block md:hidden" />
       </div>
     </div>
   </section>
