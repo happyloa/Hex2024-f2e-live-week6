@@ -3,7 +3,7 @@ const showMobileNav = ref(false);
 </script>
 
 <template>
-  <header class="sticky top-0 bg-primary-100/80 backdrop-blur-sm">
+  <header class="sticky top-0 z-40 bg-primary-100/80 backdrop-blur-sm">
     <div
       class="mx-auto flex max-w-[1296px] items-center justify-between border-neutral-300 pb-1 pl-3 pr-2 pt-2 md:border-b md:py-9"
     >
