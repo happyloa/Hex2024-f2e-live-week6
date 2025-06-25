@@ -72,4 +72,72 @@ useSeoMeta({
       </ul>
     </div>
   </section>
+  <!-- 母親節強檔活動  -->
+  <section class="relative overflow-hidden bg-primary-200 p-12 md:py-20">
+    <div class="mx-auto flex max-w-[365px] flex-col items-center">
+      <p
+        class="mb-3 text-center text-h6 font-bold text-accent-200 md:mb-5 md:text-h4 md:font-black"
+      >
+        \ 母親節強檔活動 /
+      </p>
+      <h2
+        class="mb-6 text-center text-h2-sm font-black text-neutral-500 md:mb-5 md:text-h2"
+      >
+        家庭訂閱方案限時 7 折
+      </h2>
+      <ul class="mb-6 flex flex-col gap-4 text-fs-1 text-neutral-400 md:mb-10">
+        <li class="flex items-center gap-3">
+          <img src="/icons/check.svg" alt="勾勾 icon" />
+          每月最新文章無限閱讀
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="/icons/check.svg" alt="勾勾 icon" />
+          專屬會員限定內容
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="/icons/check.svg" alt="勾勾 icon" />
+          定期電子報
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="/icons/check.svg" alt="勾勾 icon" />
+          年度精選禮物
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="/icons/check.svg" alt="勾勾 icon" />
+          24 /7 優先客戶服務
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="/icons/check.svg" alt="勾勾 icon" />
+          為每個成員量身打造專屬行程
+        </li>
+      </ul>
+      <AtomButton text="我想了解" to="/plans" class="hidden md:block" />
+      <AtomButton
+        size="sm"
+        text="我想了解"
+        to="/plans"
+        class="block md:hidden"
+      />
+    </div>
+    <img
+      src="/images/desktop/home/bg-1.webp"
+      alt="母親節活動裝飾 1"
+      class="absolute -bottom-2 left-[150px] hidden lg:block xl:left-[324px]"
+      loading="lazy"
+    />
+    <figure>
+      <picture>
+        <source
+          media="(max-width: 1024px)"
+          srcset="/images/mobile/home/bg-2.webp"
+        />
+        <img
+          src="/images/desktop/home/bg-2.webp"
+          alt="母親節活動裝飾 2"
+          class="absolute -bottom-2 -right-[48px] lg:right-[50px] xl:right-[280px]"
+          loading="lazy"
+        />
+      </picture>
+    </figure>
+  </section>
 </template>
