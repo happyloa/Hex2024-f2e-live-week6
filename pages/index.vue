@@ -147,4 +147,157 @@ useSeoMeta({
       </picture>
     </figure>
   </section>
+  <!-- 品味生活 -->
+  <section class="px-3 py-12 md:py-20">
+    <div class="mx-auto max-w-[1296px]">
+      <h2
+        class="mb-6 text-h2-sm font-black text-neutral-500 md:mb-10 md:text-h2"
+      >
+        品味生活
+      </h2>
+      <ul class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <li>
+          <article class="flex flex-col gap-6 md:gap-9">
+            <h3 class="text-h1 font-black text-neutral-400 md:text-[3.25rem]">
+              食.
+            </h3>
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/images/mobile/home/life-1.webp"
+                />
+                <img
+                  src="/images/desktop/home/life-1.webp"
+                  alt="品味生活 1"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <ul
+              class="flex flex-col gap-5 text-h6 font-bold text-neutral-500 md:text-h5 md:font-black"
+            >
+              <li>｜米其林三星主廚的那些絕活傳奇</li>
+              <li>｜探秘成都的地道川味秘技與魅力</li>
+              <li>｜義大利釀酒師對於酒的堅持執著</li>
+            </ul>
+            <button
+              type="button"
+              class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
+            >
+              View More<svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col gap-6 md:gap-9">
+            <h3 class="text-h1 font-black text-neutral-400 md:text-[3.25rem]">
+              藝.
+            </h3>
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/images/mobile/home/life-2.webp"
+                />
+                <img
+                  src="/images/desktop/home/life-2.webp"
+                  alt="品味生活 2"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <ul
+              class="flex flex-col gap-5 text-h6 font-bold text-neutral-500 md:text-h5 md:font-black"
+            >
+              <li>｜解構教主級時裝設計大師的獨特美學</li>
+              <li>｜當代攝影師鏡頭中的光影離奇</li>
+              <li>｜帶你穿縮中世紀，夏季文藝復興展</li>
+            </ul>
+            <button
+              type="button"
+              class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
+            >
+              View More<svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col gap-6 md:gap-9">
+            <h3 class="text-h1 font-black text-neutral-400 md:text-[3.25rem]">
+              旅.
+            </h3>
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/images/mobile/home/life-3.webp"
+                />
+                <img
+                  src="/images/desktop/home/life-3.webp"
+                  alt="品味生活 3"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <ul
+              class="flex flex-col gap-5 text-h6 font-bold text-neutral-500 md:text-h5 md:font-black"
+            >
+              <li>｜遠離喧囂,偶探巴塔哥尼亞終界</li>
+              <li>｜東京深度六區,帶你細品極簡魅力</li>
+              <li>｜專賣奇珍異寶的東歐地下夜市</li>
+            </ul>
+            <button
+              type="button"
+              class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
+            >
+              View More<svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
