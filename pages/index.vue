@@ -155,10 +155,12 @@ useSeoMeta({
       >
         品味生活
       </h2>
-      <ul class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <li>
           <article class="flex flex-col gap-6 md:gap-9">
-            <h3 class="text-h1 font-black text-neutral-400 md:text-[3.25rem]">
+            <h3
+              class="self-start text-h1 font-black text-neutral-400 md:text-[3.25rem]"
+            >
               食.
             </h3>
             <figure>
@@ -170,6 +172,7 @@ useSeoMeta({
                 <img
                   src="/images/desktop/home/life-1.webp"
                   alt="品味生活 1"
+                  class="w-full"
                   loading="lazy"
                 />
               </picture>
@@ -205,10 +208,12 @@ useSeoMeta({
         </li>
         <li>
           <article class="flex flex-col gap-6 md:gap-9">
-            <h3 class="text-h1 font-black text-neutral-400 md:text-[3.25rem]">
+            <h3
+              class="self-start text-h1 font-black text-neutral-400 md:text-[3.25rem]"
+            >
               藝.
             </h3>
-            <figure>
+            <figure class="w-full">
               <picture>
                 <source
                   media="(max-width: 768px)"
@@ -217,6 +222,7 @@ useSeoMeta({
                 <img
                   src="/images/desktop/home/life-2.webp"
                   alt="品味生活 2"
+                  class="w-full"
                   loading="lazy"
                 />
               </picture>
@@ -252,10 +258,12 @@ useSeoMeta({
         </li>
         <li>
           <article class="flex flex-col gap-6 md:gap-9">
-            <h3 class="text-h1 font-black text-neutral-400 md:text-[3.25rem]">
+            <h3
+              class="self-start text-h1 font-black text-neutral-400 md:text-[3.25rem]"
+            >
               旅.
             </h3>
-            <figure>
+            <figure class="w-full">
               <picture>
                 <source
                   media="(max-width: 768px)"
@@ -264,6 +272,7 @@ useSeoMeta({
                 <img
                   src="/images/desktop/home/life-3.webp"
                   alt="品味生活 3"
+                  class="w-full"
                   loading="lazy"
                 />
               </picture>
