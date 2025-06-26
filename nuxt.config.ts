@@ -34,7 +34,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/google-fonts", "@nuxtjs/tailwindcss", "nuxt-swiper"],
 
   // Google Fonts 的相關配置
   googleFonts: {
