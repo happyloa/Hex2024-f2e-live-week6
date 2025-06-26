@@ -190,7 +190,9 @@ onMounted(() => {
       </h2>
       <ul class="hidden flex-col gap-10 sm:flex">
         <li>
-          <article class="flex gap-6 border-b border-[#E9ECEF] pb-6">
+          <article
+            class="flex items-start gap-6 border-b border-[#E9ECEF] pb-6"
+          >
             <img
               src="/images/desktop/article/read-1.webp"
               alt="週末說走就走露營記"
@@ -214,7 +216,9 @@ onMounted(() => {
           </article>
         </li>
         <li>
-          <article class="flex gap-6 border-b border-[#E9ECEF] pb-6">
+          <article
+            class="flex items-start gap-6 border-b border-[#E9ECEF] pb-6"
+          >
             <img
               src="/images/desktop/article/read-2.webp"
               alt="城市野營日記"
@@ -238,7 +242,9 @@ onMounted(() => {
           </article>
         </li>
         <li>
-          <article class="flex gap-6 border-b border-[#E9ECEF] pb-6">
+          <article
+            class="flex items-start gap-6 border-b border-[#E9ECEF] pb-6"
+          >
             <img
               src="/images/desktop/article/read-3.webp"
               alt="和寵物去露營 - 大自然之旅的雙倍體驗"
