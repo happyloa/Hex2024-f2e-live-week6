@@ -182,4 +182,118 @@ onMounted(() => {
       </div>
     </div>
   </section>
+  <!-- 延伸閱讀 -->
+  <section class="px-3 pb-[60px] md:pb-[100px]">
+    <div class="mx-auto max-w-[856px]">
+      <h2 class="mb-5 text-h4 font-black text-neutral-500 md:mb-10 md:text-h2">
+        延伸閱讀
+      </h2>
+      <ul
+        class="flex flex-row flex-nowrap gap-6 overflow-x-scroll md:flex-col md:gap-10"
+      >
+        <li>
+          <article
+            class="flex flex-col gap-4 border-b border-[#E9ECEF] pb-6 md:flex-row md:gap-6"
+          >
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/images/mobile/article/read-1.webp"
+                />
+                <img
+                  src="/images/desktop/article/read-1.webp"
+                  alt="週末說走就走露營記"
+                  class="w-full"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <div class="flex max-w-[635px] flex-col">
+              <h3 class="mb-2 text-h5 font-black text-neutral-500">
+                週末說走就走露營記
+              </h3>
+              <p class="mb-3 text-fs-1 text-neutral-400">
+                遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+              </p>
+              <button
+                type="button"
+                class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+              >
+                Read More
+              </button>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article
+            class="flex flex-col gap-4 border-b border-[#E9ECEF] pb-6 md:flex-row md:gap-6"
+          >
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/images/mobile/article/read-2.webp"
+                />
+                <img
+                  src="/images/desktop/article/read-2.webp"
+                  alt="城市野營日記"
+                  class="w-full"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <div class="flex max-w-[635px] flex-col">
+              <h3 class="mb-2 text-h5 font-black text-neutral-500">
+                城市野營日記
+              </h3>
+              <p class="mb-3 text-fs-1 text-neutral-400">
+                終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+              </p>
+              <button
+                type="button"
+                class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+              >
+                Read More
+              </button>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article
+            class="flex flex-col gap-4 border-b border-[#E9ECEF] pb-6 md:flex-row md:gap-6"
+          >
+            <figure>
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/images/mobile/article/read-3.webp"
+                />
+                <img
+                  src="/images/desktop/article/read-3.webp"
+                  alt="城市野營日記"
+                  class="w-full"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <div class="flex max-w-[635px] flex-col">
+              <h3 class="mb-2 text-h5 font-black text-neutral-500">
+                和寵物去露營 - 大自然之旅的雙倍體驗
+              </h3>
+              <p class="mb-3 text-fs-1 text-neutral-400">
+                說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+              </p>
+              <button
+                type="button"
+                class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+              >
+                Read More
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
