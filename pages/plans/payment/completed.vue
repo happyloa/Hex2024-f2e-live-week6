@@ -70,12 +70,17 @@ onMounted(() => {
           </div>
         </div>
       </section>
-      <AtomButton text="瀏覽文章" hasIcon to="/" class="hidden md:flex" />
+      <AtomButton
+        text="瀏覽文章"
+        hasIcon
+        to="/article"
+        class="hidden md:flex"
+      />
       <AtomButton
         text="瀏覽文章"
         hasIcon
         size="sm"
-        to="/"
+        to="/article"
         class="flex md:hidden"
       />
     </main>
