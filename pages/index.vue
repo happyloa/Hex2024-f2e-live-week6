@@ -12,7 +12,7 @@ useSeoMeta({
 
 <template>
   <!-- Hero 區塊 -->
-  <section class="h-screen py-0 lg:py-20">
+  <section class="h-[90vh] py-0 sm:h-screen lg:py-20">
     <div
       class="mx-auto flex h-full max-w-[1296px] flex-col items-center justify-end bg-[url(/images/mobile/home/banner.webp)] bg-cover bg-center bg-no-repeat px-5 py-12 text-center text-white sm:items-start sm:justify-center sm:bg-[url(/images/desktop/home/banner.webp)] sm:px-[60px]"
     >
