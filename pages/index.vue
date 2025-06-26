@@ -1,4 +1,9 @@
 <script setup>
+import { useSwiper } from "#imports";
+
+const articleSwiper = ref(null);
+const article = useSwiper(articleSwiper);
+
 useSeoMeta({
   title: "首頁 | 2024 切版直播班 - 內容訂閱網站",
   ogTitle: "首頁 | 2024 切版直播班 - 內容訂閱網站",
@@ -77,6 +82,238 @@ useSeoMeta({
           <h3>時尚先鋒派</h3>
         </li>
       </ul>
+    </div>
+  </section>
+  <!-- 精選文章 -->
+  <section class="px-3 py-12 md:py-20">
+    <div class="mx-auto max-w-[1296px]">
+      <!-- 電腦版 -->
+      <div class="hidden grid-cols-3 gap-12 md:grid">
+        <!-- 標題 & 導覽 -->
+        <div class="flex flex-col justify-between">
+          <h2 class="text-h2 font-black text-neutral-500">精選文章</h2>
+          <div>
+            <span
+              class="Newsreader | mb-8 flex gap-2.5 text-fs-1 text-neutral-500"
+              >1<span class="text-neutral-400">/</span>5</span
+            >
+            <div class="flex items-center gap-5 text-neutral-400">
+              <button
+                type="button"
+                class="rounded-full border border-neutral-400 px-4 py-1 transition duration-300 hover:bg-neutral-400 hover:text-primary-200"
+              >
+                <!-- 左箭頭 -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.5 12a.75.75 0 0 0-.75-.75H4.06l4.72-4.719A.751.751 0 0 0 7.72 5.47l-6 6a.75.75 0 0 0 0 1.062l6 6a.75.75 0 1 0 1.06-1.062l-4.72-4.72h17.69a.75.75 0 0 0 .75-.75"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <hr class="w-20 border-neutral-400" />
+              <button
+                type="button"
+                class="rounded-full border border-neutral-400 px-4 py-1 transition duration-300 hover:bg-neutral-400 hover:text-primary-200"
+              >
+                <!-- 右箭頭 -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 卡片 -->
+        <article class="flex flex-col gap-6 border-b border-neutral-500 pb-6">
+          <img
+            src="/images/desktop/home/articles-1.webp"
+            alt="私人島嶼的露營奇遇記"
+          />
+          <div>
+            <h3 class="mb-2 text-h5 font-black text-neutral-500">
+              私人島嶼的露營奇遇記
+            </h3>
+            <p class="text-fs-1 text-neutral-400">
+              遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+            </p>
+          </div>
+          <button
+            type="button"
+            class="Newsreader | self-start py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+          >
+            Read More
+          </button>
+        </article>
+        <article class="flex flex-col gap-6 border-b border-neutral-500 pb-6">
+          <img
+            src="/images/desktop/home/articles-2.webp"
+            alt="窺探米其林三星主廚的絕密手藝"
+          />
+          <div>
+            <h3 class="mb-2 text-h5 font-black text-neutral-500">
+              窺探米其林三星主廚的絕密手藝
+            </h3>
+            <p class="text-fs-1 text-neutral-400">
+              在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+            </p>
+          </div>
+          <div class="flex items-center justify-between">
+            <button
+              type="button"
+              class="Newsreader | py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+            >
+              Read More
+            </button>
+            <a
+              href="#"
+              class="block rounded bg-primary-300 px-2 py-1 text-h6 font-bold text-primary transition duration-300 hover:bg-primary hover:text-white"
+              >會員專屬</a
+            >
+          </div>
+        </article>
+      </div>
+      <!-- 手機版 -->
+      <div class="block md:hidden">
+        <h2 class="mb-6 text-h2-sm font-black text-neutral-500">精選文章</h2>
+        <ClientOnly>
+          <swiper-container
+            class="mb-10"
+            ref="articleSwiper"
+            slides-per-view="1.1"
+            space-between="24"
+            :autoplay="{
+              delay: 3000,
+              disableOnInteraction: true,
+            }"
+            :loop="true"
+          >
+            <swiper-slide>
+              <article
+                class="flex flex-col gap-6 border-b border-neutral-500 pb-6"
+              >
+                <img
+                  src="/images/mobile/home/articles-1.webp"
+                  alt="私人島嶼的露營奇遇記"
+                />
+                <div>
+                  <h3 class="mb-2 text-h5 font-black text-neutral-500">
+                    私人島嶼的露營奇遇記
+                  </h3>
+                  <p class="text-fs-1 text-neutral-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧..
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="Newsreader | self-start py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                >
+                  Read More
+                </button>
+              </article>
+            </swiper-slide>
+            <swiper-slide>
+              <article
+                class="flex flex-col gap-6 border-b border-neutral-500 pb-6"
+              >
+                <img
+                  src="/images/mobile/home/articles-2.webp"
+                  alt="窺探米其林三星主廚的絕密手藝"
+                />
+                <div>
+                  <h3 class="mb-2 text-h5 font-black text-neutral-500">
+                    窺探米其林三星主廚的絕密手藝
+                  </h3>
+                  <p class="text-fs-1 text-neutral-400">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,品嘗人...
+                  </p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <button
+                    type="button"
+                    class="Newsreader | py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                  >
+                    Read More
+                  </button>
+                  <a
+                    href="#"
+                    class="block rounded bg-primary-300 px-2 py-1 text-h6 font-bold text-primary transition duration-300 hover:bg-primary hover:text-white"
+                    >會員專屬</a
+                  >
+                </div>
+              </article>
+            </swiper-slide>
+          </swiper-container>
+        </ClientOnly>
+        <div class="flex items-center justify-between gap-3">
+          <span class="Newsreader | flex gap-2.5 text-fs-1 text-neutral-500"
+            >1<span class="text-neutral-400">/</span>5</span
+          >
+          <div class="flex items-center gap-5 text-neutral-400">
+            <button
+              type="button"
+              class="rounded-full border border-neutral-400 px-4 py-1 transition duration-300 hover:bg-neutral-400 hover:text-primary-200"
+              @click="article.prev()"
+            >
+              <!-- 左箭頭 -->
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.5 12a.75.75 0 0 0-.75-.75H4.06l4.72-4.719A.751.751 0 0 0 7.72 5.47l-6 6a.75.75 0 0 0 0 1.062l6 6a.75.75 0 1 0 1.06-1.062l-4.72-4.72h17.69a.75.75 0 0 0 .75-.75"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <hr class="w-20 border-neutral-400" />
+            <button
+              type="button"
+              class="rounded-full border border-neutral-400 px-4 py-1 transition duration-300 hover:bg-neutral-400 hover:text-primary-200"
+              @click="article.next()"
+            >
+              <!-- 右箭頭 -->
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- 母親節強檔活動  -->
