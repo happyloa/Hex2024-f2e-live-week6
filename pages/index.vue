@@ -549,7 +549,7 @@ useSeoMeta({
   <!-- 生活風格提案 -->
   <section class="bg-primary-200 px-3 pb-11 pt-12 md:py-20">
     <div
-      class="mx-auto flex max-w-[1296px] flex-col items-center gap-[49px] md:flex-row md:gap-[90px]"
+      class="mx-auto flex max-w-[1296px] flex-col items-center gap-[49px] md:flex-row xl:gap-[90px]"
     >
       <!-- 文字容器 -->
       <div class="flex flex-col">
