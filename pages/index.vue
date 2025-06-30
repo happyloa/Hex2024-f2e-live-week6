@@ -546,4 +546,387 @@ useSeoMeta({
       </ul>
     </div>
   </section>
+  <!-- 生活風格提案 -->
+  <section class="bg-primary-200 px-3 pb-11 pt-12 md:py-20">
+    <div
+      class="mx-auto flex max-w-[1296px] flex-col items-center gap-[49px] md:flex-row md:gap-[90px]"
+    >
+      <!-- 文字容器 -->
+      <div class="flex flex-col">
+        <p
+          class="mb-4 text-center text-h6 font-bold text-neutral-400 md:text-start md:text-h5 md:font-black"
+        >
+          今天又不知道要去哪裡了嗎？
+        </p>
+        <h2
+          class="mb-6 text-center text-h2-sm font-black text-neutral-500 md:mb-9 md:text-start md:text-h2 xl:whitespace-nowrap"
+        >
+          Vivre <br class="md:hidden" />給你意想不到的<br
+            class="hidden md:block 2xl:hidden"
+          />生活風格提案
+        </h2>
+        <AtomButton
+          text="馬上訂閱"
+          to="/plans"
+          hasIcon
+          class="hidden self-start md:flex"
+        />
+        <AtomButton
+          size="sm"
+          text="馬上訂閱"
+          to="/plans"
+          hasIcon
+          class="flex self-center md:hidden"
+        />
+      </div>
+      <!-- 圖片容器 -->
+      <div class="hidden grid-cols-2 gap-6 text-h6 font-bold 2xl:grid">
+        <div class="flex flex-col gap-10 pt-[64px]">
+          <article
+            class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-1.webp)]"
+          >
+            <div
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>人氣行程</span>
+            </div>
+            <footer
+              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+            >
+              <h3 class="text-primary-100">親子露營要帶什麼？</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </footer>
+          </article>
+          <article
+            class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-2.webp)]"
+          >
+            <div
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>編輯推薦</span>
+            </div>
+            <footer
+              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+            >
+              <h3 class="text-primary-100">質感房間改造攻略！</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </footer>
+          </article>
+        </div>
+        <div class="flex flex-col gap-10">
+          <article
+            class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-3.webp)]"
+          >
+            <div
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>編輯推薦</span>
+            </div>
+            <footer
+              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+            >
+              <h3 class="text-primary-100">山女孩的健行筆記</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </footer>
+          </article>
+          <article
+            class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-4.webp)]"
+          >
+            <div
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                  fill="currentColor"
+                />
+              </svg>
+              <span>熱門文章</span>
+            </div>
+            <footer
+              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+            >
+              <h3 class="text-primary-100">適合溜小孩的海邊景點推薦</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </footer>
+          </article>
+        </div>
+      </div>
+      <!-- 行動版圖片 -->
+      <ClientOnly>
+        <swiper-container
+          class="w-full min-w-0 flex-1 text-h6 font-bold text-white 2xl:hidden"
+          slides-per-view="auto"
+          space-between="24"
+          autoplay-delay="3000"
+          autoplay-disable-on-interaction="true"
+          resize-observer="true"
+          :loop="true"
+        >
+          <swiper-slide class="w-[306px]">
+            <article
+              class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-1.webp)]"
+            >
+              <div
+                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>人氣行程</span>
+              </div>
+              <footer
+                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+              >
+                <h3 class="text-primary-100">親子露營要帶什麼？</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                    fill="currentColor"
+                  />
+                </svg>
+              </footer>
+            </article>
+          </swiper-slide>
+          <swiper-slide class="w-[306px]">
+            <article
+              class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-2.webp)]"
+            >
+              <div
+                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>編輯推薦</span>
+              </div>
+              <footer
+                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+              >
+                <h3 class="text-primary-100">質感房間改造攻略！</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                    fill="currentColor"
+                  />
+                </svg>
+              </footer>
+            </article>
+          </swiper-slide>
+          <swiper-slide class="w-[306px]">
+            <article
+              class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-3.webp)]"
+            >
+              <div
+                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>編輯推薦</span>
+              </div>
+              <footer
+                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+              >
+                <h3 class="text-primary-100">山女孩的健行筆記</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                    fill="currentColor"
+                  />
+                </svg>
+              </footer>
+            </article>
+          </swiper-slide>
+          <swiper-slide class="w-[306px]">
+            <article
+              class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-4.webp)]"
+            >
+              <div
+                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.596 8.697 5.233 12.39c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.803.803 0 0 1 0 1.393"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>熱門文章</span>
+              </div>
+              <footer
+                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+              >
+                <h3 class="text-primary-100">適合溜小孩的海邊景點推薦</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                    fill="currentColor"
+                  />
+                </svg>
+              </footer>
+            </article>
+          </swiper-slide>
+        </swiper-container>
+      </ClientOnly>
+    </div>
+  </section>
 </template>
