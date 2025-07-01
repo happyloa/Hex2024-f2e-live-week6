@@ -1,13 +1,78 @@
 <script setup>
+useSeoMeta({
+  title: "首頁 | 2024 切版直播班 - 內容訂閱網站",
+  ogTitle: "首頁 | 2024 切版直播班 - 內容訂閱網站",
+});
+
+/**
+ * 精選文章區塊手機版輪播的資料
+ */
 import { useSwiper } from "#imports";
 
 const articleSwiper = ref(null);
 const article = useSwiper(articleSwiper);
 
-useSeoMeta({
-  title: "首頁 | 2024 切版直播班 - 內容訂閱網站",
-  ogTitle: "首頁 | 2024 切版直播班 - 內容訂閱網站",
-});
+/**
+ * 大家都在看區塊的資料
+ */
+const tabContents = {
+  酒精路跑地圖: {
+    title: "酒精路跑地圖",
+    items: [
+      "｜城市酒吧人氣榜,盤點當紅熱門酒吧",
+      "｜你要的調酒師在這裡！五月全台酒吧客座活動整理",
+      "｜台南老宅手工酒藏,尋味百年人文釀意",
+    ],
+    mobileImg: "/images/mobile/home/hots-1.webp",
+    tags: ["#夜貓行程", "#barhopping", "#全台酒吧"],
+  },
+  台北拉麵圖鑑: {
+    title: "台北拉麵圖鑑",
+    items: [
+      "｜城市酒吧人氣榜，盤點當紅熱門酒吧",
+      "｜你要的調酒師在這裡！五月全台酒吧客座活動整理",
+      "｜台南老宅手工酒藏，尋味百年人文釀意",
+    ],
+    mobileImg: "/images/mobile/home/hots-2.webp",
+    tags: ["#雞白湯", "#拉麵", "#台北美食"],
+  },
+  海島自由行: {
+    title: "海島自由行",
+    items: [
+      "｜浪漫馬爾地夫，選島入住攻略",
+      "｜峇里島深度玩法花費懶人包",
+      "｜宿霧潛水新手入門指南",
+    ],
+    mobileImg: "/images/mobile/home/hots-3.webp",
+    tags: ["#熱帶國家", "#海邊", "#無敵海景"],
+  },
+  短天數出國推薦: {
+    title: "短天數出國推薦",
+    items: [
+      "｜72小時東京遊走 - 當個時尚東京通",
+      "｜48小時曼谷遊玩全攻略",
+      "｜三天兩夜賞櫻微醺東京",
+    ],
+    mobileImg: "/images/mobile/home/hots-4.webp",
+    tags: ["#說走就走", "#出國玩", "#東亞"],
+  },
+  週末露營趣: {
+    title: "週末露營趣",
+    items: [
+      "｜週末說走就走露營記",
+      "｜城市野營日記",
+      "｜和寵物去露營 - 大自然之旅的雙倍...",
+    ],
+    mobileImg: "/images/mobile/home/hots-5.webp",
+    tags: ["#戶外", "#露營控", "#凹豆"],
+  },
+};
+
+/** 預設第一個 Tab 為 active */
+const activeTab = ref("酒精路跑地圖");
+
+/** 依 activeTab 計算目前要顯示的內容 */
+const current = computed(() => tabContents[activeTab.value]);
 </script>
 
 <template>
@@ -383,6 +448,178 @@ useSeoMeta({
         />
       </picture>
     </figure>
+  </section>
+  <!-- 大家都在看 -->
+  <section class="px-3 py-12 md:py-20">
+    <div class="mx-auto max-w-[1296px]">
+      <h2
+        class="mb-6 text-h2-sm font-black text-neutral-500 md:mb-10 md:text-h2"
+      >
+        大家都在看
+      </h2>
+      <!-- 電腦版 -->
+      <div class="hidden grid-cols-4 gap-6 xl:grid">
+        <aside
+          class="col-span-1 rounded-xl bg-white p-6 shadow-[0_2px_8px_0_#6E6B6714]"
+        >
+          <ul class="flex flex-col gap-6 text-h5 font-black text-neutral-600">
+            <li
+              v-for="(content, key) in tabContents"
+              :key="key"
+              @click="activeTab = key"
+              :class="[
+                'cursor-pointer rounded p-4 transition duration-300 hover:bg-accent-100',
+                { 'bg-accent-100': activeTab === key },
+              ]"
+            >
+              •{{ key }}
+            </li>
+          </ul>
+        </aside>
+        <main class="col-span-3 rounded-xl bg-white p-10">
+          <!-- 標題與列表 -->
+          <div class="mb-4 p-6">
+            <h3 class="mb-6 text-h4 font-black text-accent-200">
+              {{ current.title }}
+            </h3>
+            <ul class="flex flex-col gap-5 text-h6 font-bold text-neutral-500">
+              <li v-for="(item, idx) in current.items" :key="idx">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+          <!-- 圖片容器 -->
+          <div class="mx-auto mb-4 flex max-w-[855px] gap-1">
+            <img
+              src="/images/desktop/home/hots-1.webp"
+              alt="大家都在看 1"
+              class="rounded-l-[20px] rounded-r"
+            />
+            <img
+              src="/images/desktop/home/hots-2.webp"
+              alt="大家都在看 2"
+              class="rounded"
+            />
+            <img
+              src="/images/desktop/home/hots-3.webp"
+              alt="大家都在看 3"
+              class="rounded"
+            />
+            <img
+              src="/images/desktop/home/hots-4.webp"
+              alt="大家都在看 4"
+              class="rounded-l rounded-r-[20px]"
+            />
+          </div>
+          <!-- 標籤與 CTA -->
+          <div class="flex items-center justify-between p-6">
+            <ul class="flex gap-4 text-h6 font-bold text-primary">
+              <li v-for="(tag, idx) in current.tags" :key="idx" class="py-2">
+                <a
+                  href="#"
+                  class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                  >{{ tag }}</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="Newsreader | flex gap-3 py-2.5 text-h5 font-bold text-accent-200"
+              >View More
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+        </main>
+      </div>
+      <!-- 手機版 -->
+      <ClientOnly>
+        <swiper-container
+          class="block xl:hidden"
+          :breakpoints="{
+            1024: {
+              slidesPerView: 3.1,
+            },
+            640: {
+              slidesPerView: 2.1,
+            },
+          }"
+          slides-per-view="auto"
+          space-between="24"
+          :autoplay="{
+            delay: 3000,
+            disableOnInteraction: true,
+          }"
+          :loop="true"
+        >
+          <swiper-slide v-for="(item, idx) in tabContents" :key="idx">
+            <article
+              class="rounded-xl bg-white p-4 shadow-[0_2px_8px_0_#6E6B6714]"
+            >
+              <h3 class="mb-3 text-h4-sm font-black text-accent-200">
+                {{ item.title }}
+              </h3>
+              <ul
+                class="mb-4 flex flex-col gap-2 text-fs-1 font-semibold text-neutral-500"
+              >
+                <li
+                  v-for="(item, idx) in item.items"
+                  :key="idx"
+                  class="truncate"
+                >
+                  {{ item }}
+                </li>
+              </ul>
+              <img
+                :src="item.mobileImg"
+                :alt="item.title"
+                class="mb-4 w-full rounded"
+              />
+              <ul class="mb-4 flex gap-2.5 text-xs font-bold text-primary">
+                <li v-for="(tag, idx) in item.tags" :key="idx" class="py-2">
+                  <a
+                    href="#"
+                    class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                    >{{ tag }}</a
+                  >
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-h6 font-bold text-accent-200"
+                >View More
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.721-4.719a.751.751 0 0 1 1.062-1.062l6 6a.75.75 0 0 1 0 1.062l-6 6a.751.751 0 1 1-1.062-1.062l4.72-4.719H2.25A.75.75 0 0 1 1.5 12"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </article>
+          </swiper-slide>
+        </swiper-container>
+      </ClientOnly>
+    </div>
   </section>
   <!-- 品味生活 -->
   <section class="px-3 py-12 md:py-20">
