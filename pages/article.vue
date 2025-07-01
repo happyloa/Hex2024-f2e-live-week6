@@ -125,25 +125,25 @@ onMounted(() => {
               />
             </picture>
           </figure>
-          <ul class="flex items-center gap-4 text-h6 font-bold text-primary">
+          <ul class="flex gap-4 text-h6 font-bold text-primary">
             <li class="py-2">
               <a
                 href="#"
-                class="block rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                 >#秘境尋蹤</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="block rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                 >#露營點</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="block rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                 >#山人</a
               >
             </li>
