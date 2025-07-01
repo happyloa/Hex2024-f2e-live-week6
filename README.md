@@ -33,7 +33,7 @@ $ git clone https://github.com/happyloa/Hex2024-f2e-live-week6.git
 套件安裝
 
 ```sh
-$ cd hex2024-f2e-live-week6
+$ cd Hex2024-f2e-live-week6
 $ npm install
 ```
 
@@ -59,12 +59,13 @@ http://localhost:3000/
 
 ```
 pages
-├── plans              訂閱方案頁面（/plans）
-├── about              關於我們頁面（/about）
-├── article            文章頁面（/article）
-├── index              首頁（/）
-├── login              登入頁面（/login）
-└── register           註冊頁面（/register）
+├── plans                 訂閱方案頁面（/plans）
+    └── payment           付款表單頁（/plans/payment）與付款成功頁（/plans/payment/completed）
+├── about                 關於我們頁面（/about）
+├── article               文章頁面（/article）
+├── index                 首頁（/）
+├── login                 登入頁面（/login）
+└── register              註冊頁面（/register）
 ```
 
 ## 元件檔案（Components）
@@ -76,8 +77,8 @@ pages
 ```
 components
 
-├── Atom               頁面上的小型元件（按鈕、麵包屑）
-└── Layout             版面元件（導覽選單、頁尾）
+├── Atom                  頁面上的小型元件（按鈕、麵包屑）
+└── Layout                版面元件（導覽選單、頁尾）
 ```
 
 ## 靜態檔案
@@ -88,11 +89,11 @@ components
 
 ```
 public
-├── icons              在網站上使用的各式 icon
-├── images             電腦版 & 行動版圖片
-├── favicon.ico        網站的 favicon
-├── thumb.webp         文件上用的縮圖
-└── ogImage.webp       將網站連結貼到社群媒體時出現的預覽圖片
+├── icons                 在網站上使用的各式 icon
+├── images                電腦版 & 行動版圖片
+├── favicon.ico           網站的 favicon
+├── thumb.webp            讀我上用的縮圖
+└── ogImage.webp          將網站連結貼到社群媒體時出現的預覽圖片
 ```
 
 ## 使用的套件 & 工具
@@ -102,3 +103,8 @@ public
 - [Nuxt Swiper](https://nuxt.com/modules/swiper)
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT o3](https://openai.com/)
+
+## 注意事項
+
+當首次來到網站時會登錄一個帶著 false 值的 isSubscribed 參數到 sessionStorage 內，當付款成功以後（到達付款成功頁 ）該參數的值會變成 true。
+文章頁面（/article）是否顯示完整內容是依照 isSubscribed 目前的值來決定。
