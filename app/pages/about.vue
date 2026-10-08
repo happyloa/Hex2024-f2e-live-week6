@@ -40,7 +40,7 @@ useSeoMeta({
         </figure>
         <div class="flex-1 px-6 md:px-10">
           <h2
-            class="Newsreader | mb-3 text-[1.75rem] font-bold tracking-widest text-neutral-600 md:text-[2rem]"
+            class="mb-3 font-newsreader text-[1.75rem] font-bold tracking-widest text-neutral-600 md:text-[2rem]"
           >
             Vivre
           </h2>
@@ -100,7 +100,7 @@ useSeoMeta({
       class="mx-auto flex max-w-[1296px] flex-col justify-between gap-6 md:flex-row"
     >
       <h2
-        class="whitespace-nowrap text-center text-h2-sm font-black text-neutral-500 md:text-h2"
+        class="text-center text-h2-sm font-black whitespace-nowrap text-neutral-500 md:text-h2"
       >
         大事記
       </h2>
@@ -109,16 +109,16 @@ useSeoMeta({
           class="flex flex-col items-start gap-6 font-bold md:gap-[72px] lg:flex-row"
         >
           <h3
-            class="Newsreader | bg-primary p-3 text-[1rem] text-neutral-100 md:text-[1.5rem]"
+            class="bg-primary p-3 font-newsreader text-[1rem] text-neutral-100 md:text-[1.5rem]"
           >
             2020
           </h3>
           <div class="flex flex-col gap-6">
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">5</span>月
+                <span class="font-newsreader md:text-h4">5</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -129,9 +129,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">10</span>月
+                <span class="font-newsreader md:text-h4">10</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -146,16 +146,16 @@ useSeoMeta({
           class="flex flex-col items-start gap-6 font-bold md:gap-[72px] lg:flex-row"
         >
           <h3
-            class="Newsreader | bg-primary p-3 text-[1rem] text-neutral-100 md:text-[1.5rem]"
+            class="bg-primary p-3 font-newsreader text-[1rem] text-neutral-100 md:text-[1.5rem]"
           >
             2021
           </h3>
           <div class="flex flex-col gap-6">
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">3</span>月
+                <span class="font-newsreader md:text-h4">3</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -165,9 +165,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">7</span>月
+                <span class="font-newsreader md:text-h4">7</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -178,9 +178,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">12</span>月
+                <span class="font-newsreader md:text-h4">12</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -195,16 +195,16 @@ useSeoMeta({
           class="flex flex-col items-start gap-6 font-bold md:gap-[72px] lg:flex-row"
         >
           <h3
-            class="Newsreader | bg-primary p-3 text-[1rem] text-neutral-100 md:text-[1.5rem]"
+            class="bg-primary p-3 font-newsreader text-[1rem] text-neutral-100 md:text-[1.5rem]"
           >
             2022
           </h3>
           <div class="flex flex-col gap-6">
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">3</span>月
+                <span class="font-newsreader md:text-h4">3</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -214,9 +214,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">8</span>月
+                <span class="font-newsreader md:text-h4">8</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -227,9 +227,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">10</span>月
+                <span class="font-newsreader md:text-h4">10</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -243,16 +243,16 @@ useSeoMeta({
           class="flex flex-col items-start gap-6 font-bold md:gap-[72px] lg:flex-row"
         >
           <h3
-            class="Newsreader | bg-primary p-3 text-[1rem] text-neutral-100 md:text-[1.5rem]"
+            class="bg-primary p-3 font-newsreader text-[1rem] text-neutral-100 md:text-[1.5rem]"
           >
             2023
           </h3>
           <div class="flex flex-col gap-6">
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">1</span>月
+                <span class="font-newsreader md:text-h4">1</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -262,9 +262,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">5</span>月
+                <span class="font-newsreader md:text-h4">5</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -274,9 +274,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">9</span>月
+                <span class="font-newsreader md:text-h4">9</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"
@@ -287,9 +287,9 @@ useSeoMeta({
             </div>
             <div class="flex gap-3 md:gap-4">
               <h4
-                class="min-w-[38px] whitespace-nowrap text-h6 text-neutral-400 md:min-w-12"
+                class="min-w-[38px] text-h6 whitespace-nowrap text-neutral-400 md:min-w-12"
               >
-                <span class="Newsreader | md:text-h4">11</span>月
+                <span class="font-newsreader md:text-h4">11</span>月
               </h4>
               <p
                 class="border-l border-neutral-300 pl-3 text-fs-1 font-semibold text-neutral-600 md:pl-4"

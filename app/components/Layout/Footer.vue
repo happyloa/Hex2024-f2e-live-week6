@@ -14,7 +14,7 @@
   </section>
   <footer>
     <p
-      class="Newsreader | mx-auto max-w-[1296px] border-t border-neutral-300 p-5 text-center text-fs-1 font-semibold text-primary md:py-6"
+      class="mx-auto max-w-[1296px] border-t border-neutral-300 p-5 text-center font-newsreader text-fs-1 font-semibold text-primary md:py-6"
     >
       ©Vivre 2024 All right Reserved
     </p>

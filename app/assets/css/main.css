@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "@fontsource-variable/noto-serif-tc/wght.css";
+@import "@fontsource-variable/newsreader/wght.css";
+
+@theme {
+  --color-primary-100: #fffdf5;
+  --color-primary-200: #fffbe5;
+  --color-primary-300: #e8e3da;
+  --color-primary: #6e6b67;
+  --color-accent-100: #e0efde;
+  --color-accent-200: #569573;
+  --color-accent-300: #406c55;
+  --color-neutral-100: #f8f9fa;
+  --color-neutral-200: #dee2e6;
+  --color-neutral-300: #adb5bd;
+  --color-neutral-400: #6c757d;
+  --color-neutral-500: #343a40;
+  --color-neutral-600: #212529;
+  --color-special-info: #4a72ff;
+  --color-special-success: #2cc585;
+  --color-special-warning: #ffb054;
+  --color-special-danger: #d65f5f;
+  --text-h1: 2.5rem;
+  --text-h1--line-height: 1.2;
+  --text-h1--letter-spacing: 0.1em;
+  --text-h1-sm: 1.75rem;
+  --text-h1-sm--line-height: 1.2;
+  --text-h1-sm--letter-spacing: 0.1em;
+  --text-h2: 2rem;
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: 0.1em;
+  --text-h2-sm: 1.5rem;
+  --text-h2-sm--line-height: 1.2;
+  --text-h2-sm--letter-spacing: 0.1em;
+  --text-h3: 1.75rem;
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: 0.1em;
+  --text-h4: 1.5rem;
+  --text-h4--line-height: 1.2;
+  --text-h4--letter-spacing: 0.1em;
+  --text-h4-sm: 1.25rem;
+  --text-h4-sm--line-height: 1.2;
+  --text-h4-sm--letter-spacing: 0.1em;
+  --text-h5: 1.25rem;
+  --text-h5--line-height: 1.2;
+  --text-h5--letter-spacing: 0.1em;
+  --text-h6: 1rem;
+  --text-h6--line-height: 1.2;
+  --text-h6--letter-spacing: 0.1em;
+  --text-fs-1: 1rem;
+  --text-fs-1--line-height: 1.5;
+  --text-fs-1--letter-spacing: 0.05em;
+  --font-serif: "Noto Serif TC Variable", serif;
+  --font-newsreader: "Newsreader Variable", serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-serif);
+  }
+}

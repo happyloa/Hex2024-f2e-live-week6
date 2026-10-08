@@ -107,42 +107,42 @@ const current = computed(() => tabContents[activeTab.value]);
         class="grid grid-cols-1 gap-2 text-center text-h6 font-bold text-white sm:grid-cols-2 sm:text-h5 sm:font-black lg:grid-cols-4 lg:gap-6"
       >
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-1.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-1.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-1.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-1.webp)]"
         >
           <h3>城市漫遊者</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-3.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-3.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-3.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-3.webp)]"
         >
           <h3>秘境尋蹤人</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-5.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-5.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-5.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-5.webp)]"
         >
           <h3>品味設計家</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-8.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-8.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-8.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-8.webp)]"
         >
           <h3>美食探險記</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-2.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-2.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-2.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-2.webp)]"
         >
           <h3>美學建築誌</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-4.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-4.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-4.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-4.webp)]"
         >
           <h3>慢活生活行</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-6.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-6.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-6.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-6.webp)]"
         >
           <h3>工藝匠心賞</h3>
         </li>
         <li
-          class="h-[84px] content-center rounded-br-[20px] rounded-tl-[20px] bg-[url(/images/mobile/home/theme-7.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-7.webp)]"
+          class="h-[84px] content-center rounded-tl-[20px] rounded-br-[20px] bg-[url(/images/mobile/home/theme-7.webp)] bg-cover bg-center bg-no-repeat sm:h-[200px] sm:bg-[url(/images/desktop/home/theme-7.webp)]"
         >
           <h3>時尚先鋒派</h3>
         </li>
@@ -159,7 +159,7 @@ const current = computed(() => tabContents[activeTab.value]);
           <h2 class="text-h2 font-black text-neutral-500">精選文章</h2>
           <div>
             <span
-              class="Newsreader | mb-8 flex gap-2.5 text-fs-1 text-neutral-500"
+              class="mb-8 flex gap-2.5 font-newsreader text-fs-1 text-neutral-500"
               >1<span class="text-neutral-400">/</span>5</span
             >
             <div class="flex items-center gap-5 text-neutral-400">
@@ -223,7 +223,7 @@ const current = computed(() => tabContents[activeTab.value]);
           </div>
           <button
             type="button"
-            class="Newsreader | self-start py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+            class="self-start py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
           >
             Read More
           </button>
@@ -244,13 +244,13 @@ const current = computed(() => tabContents[activeTab.value]);
           <div class="flex items-center justify-between">
             <button
               type="button"
-              class="Newsreader | py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+              class="py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
             >
               Read More
             </button>
             <a
               href="#"
-              class="block rounded bg-primary-300 px-2 py-1 text-h6 font-bold text-primary transition duration-300 hover:bg-primary hover:text-white"
+              class="block rounded-sm bg-primary-300 px-2 py-1 text-h6 font-bold text-primary transition duration-300 hover:bg-primary hover:text-white"
               >會員專屬</a
             >
           </div>
@@ -269,7 +269,7 @@ const current = computed(() => tabContents[activeTab.value]);
               delay: 3000,
               disableOnInteraction: true,
             }"
-            :loop="true"
+            :rewind="true"
           >
             <swiper-slide>
               <article
@@ -289,7 +289,7 @@ const current = computed(() => tabContents[activeTab.value]);
                 </div>
                 <button
                   type="button"
-                  class="Newsreader | self-start py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                  class="self-start py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
                 >
                   Read More
                 </button>
@@ -314,13 +314,13 @@ const current = computed(() => tabContents[activeTab.value]);
                 <div class="flex items-center justify-between">
                   <button
                     type="button"
-                    class="Newsreader | py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                    class="py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
                   >
                     Read More
                   </button>
                   <a
                     href="#"
-                    class="block rounded bg-primary-300 px-2 py-1 text-h6 font-bold text-primary transition duration-300 hover:bg-primary hover:text-white"
+                    class="block rounded-sm bg-primary-300 px-2 py-1 text-h6 font-bold text-primary transition duration-300 hover:bg-primary hover:text-white"
                     >會員專屬</a
                   >
                 </div>
@@ -329,13 +329,14 @@ const current = computed(() => tabContents[activeTab.value]);
           </swiper-container>
         </ClientOnly>
         <div class="flex items-center justify-between gap-3">
-          <span class="Newsreader | flex gap-2.5 text-fs-1 text-neutral-500"
+          <span class="flex gap-2.5 font-newsreader text-fs-1 text-neutral-500"
             >1<span class="text-neutral-400">/</span>5</span
           >
           <div class="flex items-center gap-5 text-neutral-400">
             <button
               type="button"
               class="rounded-full border border-neutral-400 px-4 py-1 transition duration-300 hover:bg-neutral-400 hover:text-primary-200"
+              aria-label="上一篇精選文章"
               @click="article.prev()"
             >
               <!-- 左箭頭 -->
@@ -358,6 +359,7 @@ const current = computed(() => tabContents[activeTab.value]);
             <button
               type="button"
               class="rounded-full border border-neutral-400 px-4 py-1 transition duration-300 hover:bg-neutral-400 hover:text-primary-200"
+              aria-label="下一篇精選文章"
               @click="article.next()"
             >
               <!-- 右箭頭 -->
@@ -443,7 +445,7 @@ const current = computed(() => tabContents[activeTab.value]);
         <img
           src="/images/desktop/home/bg-2.webp"
           alt="母親節活動裝飾 2"
-          class="absolute -bottom-2 -right-[48px] lg:right-[50px] xl:right-[280px]"
+          class="absolute -right-[48px] -bottom-2 lg:right-[50px] xl:right-[280px]"
           loading="lazy"
         />
       </picture>
@@ -468,7 +470,7 @@ const current = computed(() => tabContents[activeTab.value]);
               :key="key"
               @click="activeTab = key"
               :class="[
-                'cursor-pointer rounded p-4 transition duration-300 hover:bg-accent-100',
+                'cursor-pointer rounded-sm p-4 transition duration-300 hover:bg-accent-100',
                 { 'bg-accent-100': activeTab === key },
               ]"
             >
@@ -498,12 +500,12 @@ const current = computed(() => tabContents[activeTab.value]);
             <img
               src="/images/desktop/home/hots-2.webp"
               alt="大家都在看 2"
-              class="rounded"
+              class="rounded-sm"
             />
             <img
               src="/images/desktop/home/hots-3.webp"
               alt="大家都在看 3"
-              class="rounded"
+              class="rounded-sm"
             />
             <img
               src="/images/desktop/home/hots-4.webp"
@@ -517,14 +519,14 @@ const current = computed(() => tabContents[activeTab.value]);
               <li v-for="(tag, idx) in current.tags" :key="idx" class="py-2">
                 <a
                   href="#"
-                  class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                  class="rounded-sm bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                   >{{ tag }}</a
                 >
               </li>
             </ul>
             <a
               href="#"
-              class="Newsreader | flex gap-3 py-2.5 text-h5 font-bold text-accent-200"
+              class="flex gap-3 py-2.5 font-newsreader text-h5 font-bold text-accent-200"
               >View More
               <svg
                 width="24"
@@ -585,20 +587,20 @@ const current = computed(() => tabContents[activeTab.value]);
               <img
                 :src="item.mobileImg"
                 :alt="item.title"
-                class="mb-4 w-full rounded"
+                class="mb-4 w-full rounded-sm"
               />
               <ul class="mb-4 flex gap-2.5 text-xs font-bold text-primary">
                 <li v-for="(tag, idx) in item.tags" :key="idx" class="py-2">
                   <a
                     href="#"
-                    class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                    class="rounded-sm bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                     >{{ tag }}</a
                   >
                 </li>
               </ul>
               <a
                 href="#"
-                class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-h6 font-bold text-accent-200"
+                class="flex items-center justify-center gap-3 py-2.5 font-newsreader text-h6 font-bold text-accent-200"
                 >View More
                 <svg
                   width="24"
@@ -660,7 +662,7 @@ const current = computed(() => tabContents[activeTab.value]);
             </ul>
             <button
               type="button"
-              class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
+              class="flex items-center justify-center gap-3 py-2.5 font-newsreader text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
             >
               View More<svg
                 width="24"
@@ -710,7 +712,7 @@ const current = computed(() => tabContents[activeTab.value]);
             </ul>
             <button
               type="button"
-              class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
+              class="flex items-center justify-center gap-3 py-2.5 font-newsreader text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
             >
               View More<svg
                 width="24"
@@ -760,7 +762,7 @@ const current = computed(() => tabContents[activeTab.value]);
             </ul>
             <button
               type="button"
-              class="Newsreader | flex items-center justify-center gap-3 py-2.5 text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
+              class="flex items-center justify-center gap-3 py-2.5 font-newsreader text-[1rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300 md:py-2 md:text-[1.25rem]"
             >
               View More<svg
                 width="24"
@@ -784,7 +786,7 @@ const current = computed(() => tabContents[activeTab.value]);
     </div>
   </section>
   <!-- 生活風格提案 -->
-  <section class="bg-primary-200 px-3 pb-11 pt-12 md:py-20">
+  <section class="bg-primary-200 px-3 pt-12 pb-11 md:py-20">
     <div
       class="mx-auto flex max-w-[1296px] flex-col items-center gap-[49px] md:flex-row xl:gap-[90px]"
     >
@@ -823,7 +825,7 @@ const current = computed(() => tabContents[activeTab.value]);
             class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-1.webp)]"
           >
             <div
-              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
             >
               <svg
                 width="16"
@@ -840,7 +842,7 @@ const current = computed(() => tabContents[activeTab.value]);
               <span>人氣行程</span>
             </div>
             <footer
-              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+              class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3 text-white"
             >
               <h3 class="text-primary-100">親子露營要帶什麼？</h3>
               <svg
@@ -863,7 +865,7 @@ const current = computed(() => tabContents[activeTab.value]);
             class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-2.webp)]"
           >
             <div
-              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
             >
               <svg
                 width="16"
@@ -880,7 +882,7 @@ const current = computed(() => tabContents[activeTab.value]);
               <span>編輯推薦</span>
             </div>
             <footer
-              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+              class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3 text-white"
             >
               <h3 class="text-primary-100">質感房間改造攻略！</h3>
               <svg
@@ -905,7 +907,7 @@ const current = computed(() => tabContents[activeTab.value]);
             class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-3.webp)]"
           >
             <div
-              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
             >
               <svg
                 width="16"
@@ -922,7 +924,7 @@ const current = computed(() => tabContents[activeTab.value]);
               <span>編輯推薦</span>
             </div>
             <footer
-              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+              class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3 text-white"
             >
               <h3 class="text-primary-100">山女孩的健行筆記</h3>
               <svg
@@ -945,7 +947,7 @@ const current = computed(() => tabContents[activeTab.value]);
             class="relative h-[236px] w-[306px] rounded-t bg-[url(/images/desktop/home/projects-4.webp)]"
           >
             <div
-              class="absolute -top-4 left-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+              class="absolute -top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
             >
               <svg
                 width="16"
@@ -962,7 +964,7 @@ const current = computed(() => tabContents[activeTab.value]);
               <span>熱門文章</span>
             </div>
             <footer
-              class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3 text-white"
+              class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3 text-white"
             >
               <h3 class="text-primary-100">適合溜小孩的海邊景點推薦</h3>
               <svg
@@ -999,7 +1001,7 @@ const current = computed(() => tabContents[activeTab.value]);
               class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-1.webp)]"
             >
               <div
-                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+                class="absolute top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
               >
                 <svg
                   width="16"
@@ -1016,7 +1018,7 @@ const current = computed(() => tabContents[activeTab.value]);
                 <span>人氣行程</span>
               </div>
               <footer
-                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+                class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3"
               >
                 <h3 class="text-primary-100">親子露營要帶什麼？</h3>
                 <svg
@@ -1041,7 +1043,7 @@ const current = computed(() => tabContents[activeTab.value]);
               class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-2.webp)]"
             >
               <div
-                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+                class="absolute top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
               >
                 <svg
                   width="16"
@@ -1058,7 +1060,7 @@ const current = computed(() => tabContents[activeTab.value]);
                 <span>編輯推薦</span>
               </div>
               <footer
-                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+                class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3"
               >
                 <h3 class="text-primary-100">質感房間改造攻略！</h3>
                 <svg
@@ -1083,7 +1085,7 @@ const current = computed(() => tabContents[activeTab.value]);
               class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-3.webp)]"
             >
               <div
-                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+                class="absolute top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
               >
                 <svg
                   width="16"
@@ -1100,7 +1102,7 @@ const current = computed(() => tabContents[activeTab.value]);
                 <span>編輯推薦</span>
               </div>
               <footer
-                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+                class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3"
               >
                 <h3 class="text-primary-100">山女孩的健行筆記</h3>
                 <svg
@@ -1125,7 +1127,7 @@ const current = computed(() => tabContents[activeTab.value]);
               class="relative h-[236px] rounded-t bg-[url(/images/desktop/home/projects-4.webp)]"
             >
               <div
-                class="absolute left-4 top-4 flex items-center gap-2 rounded border border-accent-100 bg-white px-3 py-2 text-accent-300"
+                class="absolute top-4 left-4 flex items-center gap-2 rounded-sm border border-accent-100 bg-white px-3 py-2 text-accent-300"
               >
                 <svg
                   width="16"
@@ -1142,7 +1144,7 @@ const current = computed(() => tabContents[activeTab.value]);
                 <span>熱門文章</span>
               </div>
               <footer
-                class="absolute bottom-0 flex w-full items-center justify-between bg-gradient-to-t from-neutral-500 to-transparent p-3"
+                class="absolute bottom-0 flex w-full items-center justify-between bg-linear-to-t/srgb from-neutral-500 to-transparent p-3"
               >
                 <h3 class="text-primary-100">適合溜小孩的海邊景點推薦</h3>
                 <svg

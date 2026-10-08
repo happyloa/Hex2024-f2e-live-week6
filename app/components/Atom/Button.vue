@@ -71,7 +71,11 @@ const btnClass = computed(() => {
       : "px-5 py-3 text-h6 font-bold",
 
     // disabled 狀態
-    disabled.value ? (intent.value === "green" ? "bg-neutral-200 pointer-events-none" : "bg-neutral-100 !text-neutral-300 pointer-events-none") : "",
+    disabled.value
+      ? intent.value === "green"
+        ? "bg-neutral-200 pointer-events-none"
+        : "bg-neutral-100 text-neutral-300! pointer-events-none"
+      : "",
   ];
   return arr;
 });
@@ -81,7 +85,7 @@ const btnClass = computed(() => {
   <NuxtLink
     :to="to"
     :target="target"
-    class="flex items-center justify-center gap-3 whitespace-nowrap rounded-full transition duration-300"
+    class="flex items-center justify-center gap-3 rounded-full whitespace-nowrap transition duration-300"
     :class="btnClass"
     :aria-disabled="disabled"
     tabindex="0"

@@ -10,7 +10,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <section class="px-3 pb-[60px] pt-4 md:py-[100px]">
+  <section class="px-3 pt-4 pb-[60px] md:py-[100px]">
     <div class="mx-auto max-w-[1296px]">
       <AtomBreadcrumb class="mb-2 md:mb-4" />
       <h1
@@ -35,7 +35,7 @@ useSeoMeta({
                   id="name"
                   name="name"
                   placeholder="請輸入姓名"
-                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
                 />
               </div>
               <!-- 密碼 -->
@@ -46,7 +46,7 @@ useSeoMeta({
                   id="password"
                   name="password"
                   placeholder="請輸入密碼"
-                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
                 />
               </div>
               <!-- 電子信箱 -->
@@ -57,7 +57,7 @@ useSeoMeta({
                   id="email"
                   name="email"
                   placeholder="請輸入電子信箱"
-                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
                 />
               </div>
             </div>
@@ -81,7 +81,9 @@ useSeoMeta({
           >
             <h2 class="mb-6 text-h5 font-bold text-black md:mb-10">付款方式</h2>
             <div class="mb-6 md:mb-10">
-              <h3 class="Newsreader | mb-1 font-bold tracking-widest md:mb-4">
+              <h3
+                class="mb-1 font-newsreader font-bold tracking-widest md:mb-4"
+              >
                 Pay With
               </h3>
               <!-- 信用卡 -->
@@ -109,7 +111,7 @@ useSeoMeta({
                   id="card-number"
                   name="card-number"
                   placeholder="1234 5678 1234 5678"
-                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
                 />
               </div>
               <!-- 過期日 -->
@@ -120,7 +122,7 @@ useSeoMeta({
                   id="expiry-date"
                   name="expiry-date"
                   placeholder="MM/YY"
-                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
                 />
               </div>
               <!-- 驗證碼 -->
@@ -132,7 +134,7 @@ useSeoMeta({
                   name="cvv"
                   placeholder="CVV"
                   maxlength="3"
-                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                  class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
                 />
               </div>
             </div>
@@ -166,7 +168,7 @@ useSeoMeta({
                 輕量型方案
               </h3>
               <span
-                class="Newsreader | text-[1rem] font-bold tracking-widest md:text-[1.25rem]"
+                class="font-newsreader text-[1rem] font-bold tracking-widest md:text-[1.25rem]"
                 >NT 1,188</span
               >
             </div>
@@ -181,7 +183,7 @@ useSeoMeta({
                 id="coupon"
                 name="coupon"
                 placeholder="請輸入折扣碼"
-                class="w-full rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+                class="w-full rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
               />
               <AtomButton intent="gray" size="sm" text="套用" />
             </div>
@@ -191,14 +193,14 @@ useSeoMeta({
             <div class="mb-3 flex items-center justify-between gap-3">
               <span>小計</span>
               <span
-                class="Newsreader | text-[1rem] tracking-widest md:text-[1.25rem]"
+                class="font-newsreader text-[1rem] tracking-widest md:text-[1.25rem]"
                 >NT 1,188</span
               >
             </div>
             <div class="flex items-center justify-between gap-3">
               <span>折扣</span>
               <span
-                class="Newsreader | text-[1rem] tracking-widest md:text-[1.25rem]"
+                class="font-newsreader text-[1rem] tracking-widest md:text-[1.25rem]"
                 >0</span
               >
             </div>
@@ -206,7 +208,7 @@ useSeoMeta({
           <div class="flex justify-between gap-3 font-bold tracking-widest">
             <span class="text-h6 text-neutral-500">總計</span>
             <span
-              class="Newsreader | text-[1.5rem] text-[#09090B] md:text-[1.75rem]"
+              class="font-newsreader text-[1.5rem] text-[#09090B] md:text-[1.75rem]"
               >NT 1,188</span
             >
           </div>

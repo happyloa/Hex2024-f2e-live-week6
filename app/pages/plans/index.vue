@@ -10,7 +10,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <section class="px-3 pb-[60px] pt-4 md:py-[100px]">
+  <section class="px-3 pt-4 pb-[60px] md:py-[100px]">
     <div class="mx-auto max-w-[1296px]">
       <AtomBreadcrumb class="mb-2 md:mb-5" />
       <h1
@@ -42,10 +42,10 @@ useSeoMeta({
                   輕量型
                 </h2>
                 <h3
-                  class="Newsreader | text-[2rem] font-bold tracking-widest md:text-[2.5rem] md:leading-[48px]"
+                  class="font-newsreader text-[2rem] font-bold tracking-widest md:text-[2.5rem] md:leading-[48px]"
                 >
                   NT 99
-                  <span class="NotoSerifTc | text-h5 font-black md:text-h4"
+                  <span class="font-serif text-h5 font-black md:text-h4"
                     >/ 月</span
                   >
                 </h3>
@@ -93,10 +93,10 @@ useSeoMeta({
                   玩咖型
                 </h2>
                 <h3
-                  class="Newsreader | text-[2rem] font-bold tracking-widest md:text-[2.5rem] md:leading-[48px]"
+                  class="font-newsreader text-[2rem] font-bold tracking-widest md:text-[2.5rem] md:leading-[48px]"
                 >
                   NT 159
-                  <span class="NotoSerifTc | text-h5 font-black md:text-h4"
+                  <span class="font-serif text-h5 font-black md:text-h4"
                     >/ 月</span
                   >
                 </h3>
@@ -151,16 +151,16 @@ useSeoMeta({
                   家庭型
                 </h2>
                 <h3
-                  class="Newsreader | mb-4 text-[2rem] font-bold tracking-widest text-accent-200 md:text-[2.5rem] md:leading-[48px]"
+                  class="mb-4 font-newsreader text-[2rem] font-bold tracking-widest text-accent-200 md:text-[2.5rem] md:leading-[48px]"
                 >
                   NT 599
                   <span
-                    class="NotoSerifTc | text-h5 font-black text-neutral-300 md:text-h4"
+                    class="font-serif text-h5 font-black text-neutral-300 md:text-h4"
                     >/ 月</span
                   >
                 </h3>
                 <span
-                  class="Newsreader | text-[1.25rem] font-bold leading-[24px] tracking-widest text-neutral-300 line-through md:text-[1.375rem]"
+                  class="font-newsreader text-[1.25rem] leading-[24px] font-bold tracking-widest text-neutral-300 line-through md:text-[1.375rem]"
                   >NT 899</span
                 >
               </header>

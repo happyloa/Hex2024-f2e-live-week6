@@ -1,0 +1,18 @@
+{
+  "name": "@nuxt/devtools",
+  "version": "3.4.2",
+  "reason": "Use the named export in simple-git 4 after upgrading the vulnerable version 3 dependency.",
+  "files": [
+    {
+      "path": "dist/chunks/module-main.mjs",
+      "originalHash": "1118596e379498f0fc0d5e4d110f19bdd1066010c859cefa000c160825eff5fa",
+      "patchedHash": "5f6cf91993c1610f61776e7cc0ca5155dd46ceac0a3329ace5d146e533e8645d",
+      "replacements": [
+        {
+          "before": "import Git from 'simple-git';",
+          "after": "import { simpleGit as Git } from 'simple-git';"
+        }
+      ]
+    }
+  ]
+}

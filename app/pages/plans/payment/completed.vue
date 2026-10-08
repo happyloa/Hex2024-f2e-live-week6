@@ -45,7 +45,7 @@ onMounted(() => {
     >
       <h2 class="mb-6 text-h5 font-black md:text-h4">訂購資訊</h2>
       <section
-        class="mb-6 whitespace-nowrap border-y border-neutral-200 py-6 md:mb-10"
+        class="mb-6 border-y border-neutral-200 py-6 whitespace-nowrap md:mb-10"
       >
         <div class="mb-6 md:mb-10">
           <div class="mb-2 flex items-center justify-between gap-3 md:mb-3">
@@ -53,7 +53,7 @@ onMounted(() => {
               輕量型方案
             </h3>
             <span
-              class="Newsreader | text-[1rem] font-bold tracking-widest md:text-[1.25rem]"
+              class="font-newsreader text-[1rem] font-bold tracking-widest md:text-[1.25rem]"
               >NT 1,188</span
             >
           </div>
@@ -62,11 +62,11 @@ onMounted(() => {
         <div class="font-bold text-neutral-400">
           <div class="mb-4 flex items-center justify-between gap-3">
             <span class="text-h6">開始日</span>
-            <span class="Newsreader | tracking-widest">2024 / 5 / 1</span>
+            <span class="font-newsreader tracking-widest">2024 / 5 / 1</span>
           </div>
           <div class="flex items-center justify-between gap-3">
             <span class="text-h6">終止日</span>
-            <span class="Newsreader | tracking-widest">2025 / 5 / 1</span>
+            <span class="font-newsreader tracking-widest">2025 / 5 / 1</span>
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ useSeoMeta({
           id="account"
           name="account"
           placeholder="請輸入會員帳號"
-          class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+          class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
         />
       </div>
       <!-- 密碼 -->
@@ -30,13 +30,13 @@ useSeoMeta({
           id="password"
           name="password"
           placeholder="請輸入密碼"
-          class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-none"
+          class="rounded-lg bg-neutral-100 px-4 py-3 placeholder:text-fs-1 placeholder:text-neutral-300 focus:outline-hidden"
         />
       </div>
       <AtomButton text="立即登入" hasIcon size="sm" class="mb-6 md:mb-10" />
       <div class="relative mb-6 flex justify-center md:mb-10">
         <hr
-          class="absolute left-1/2 top-1/2 z-0 w-full -translate-x-1/2 border-neutral-200"
+          class="absolute top-1/2 left-1/2 z-0 w-full -translate-x-1/2 border-neutral-200"
         />
         <p
           class="relative z-10 bg-white px-3 text-center text-fs-1 text-neutral-300"
@@ -61,7 +61,7 @@ useSeoMeta({
         </button>
       </div>
       <p
-        class="flex items-center justify-center gap-3 whitespace-nowrap text-fs-1 text-neutral-500"
+        class="flex items-center justify-center gap-3 text-fs-1 whitespace-nowrap text-neutral-500"
       >
         還不是會員？<NuxtLink to="/register" class="text-accent-200"
           >點此註冊</NuxtLink

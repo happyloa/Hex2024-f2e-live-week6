@@ -1,6 +1,8 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-05-15",
+  compatibilityDate: "2026-10-08",
   devtools: { enabled: true },
 
   // 網站 meta 設定
@@ -26,7 +28,7 @@ export default defineNuxtConfig({
         },
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "zh_TW" },
-        { name: "twitter:card", content: "/ogImage.webp" },
+        { name: "twitter:card", content: "summary_large_image" },
         {
           name: "twitter:image",
           content: "/ogImage.webp",
@@ -34,18 +36,17 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxtjs/tailwindcss", "nuxt-swiper"],
-
-  // Google Fonts 的相關配置
-  googleFonts: {
-    families: {
-      "Noto+Serif+TC": [600, 700, 900],
-      Newsreader: [600, 700, 900],
-    },
-    download: true,
-    inject: true,
-    display: "swap",
+  modules: ["nuxt-swiper"],
+  css: ["~/assets/css/main.css"],
+  vite: {
+    plugins: [tailwindcss()],
   },
-
-  css: ["~/assets/css/fonts.css"],
+  nitro: {
+    externals: {
+      inline: ["nuxt"],
+    },
+  },
+  experimental: {
+    externalVue: false,
+  },
 });

@@ -3,9 +3,9 @@ const showMobileNav = ref(false);
 </script>
 
 <template>
-  <header class="sticky top-0 z-40 bg-primary-100/80 backdrop-blur-sm">
+  <header class="sticky top-0 z-40 bg-primary-100/80 backdrop-blur-xs">
     <div
-      class="mx-auto flex max-w-[1296px] items-center justify-between border-neutral-300 pb-1 pl-3 pr-2 pt-2 md:border-b md:py-9"
+      class="mx-auto flex max-w-[1296px] items-center justify-between border-neutral-300 pt-2 pr-2 pb-1 pl-3 md:border-b md:py-9"
     >
       <div class="flex items-center gap-9">
         <NuxtLink to="/">
@@ -22,13 +22,13 @@ const showMobileNav = ref(false);
         <div class="relative">
           <input
             type="text"
-            class="hidden max-w-[276px] rounded-full border border-neutral-200 bg-white py-3 pl-5 pr-14 text-neutral-500 outline-none placeholder:text-fs-1 placeholder:text-neutral-300 lg:block"
+            class="hidden max-w-[276px] rounded-full border border-neutral-200 bg-white py-3 pr-14 pl-5 text-neutral-500 outline-hidden placeholder:text-fs-1 placeholder:text-neutral-300 lg:block"
             placeholder="搜尋文章"
           />
           <img
             src="/icons/search.webp"
             alt="搜尋 icon"
-            class="absolute right-5 top-1/2 -translate-y-1/2 cursor-pointer"
+            class="absolute top-1/2 right-5 -translate-y-1/2 cursor-pointer"
           />
         </div>
       </div>
@@ -61,7 +61,7 @@ const showMobileNav = ref(false);
             <AtomButton
               to="/login"
               text="登入 / 註冊"
-              class="!text-h6 font-bold"
+              class="text-h6! font-bold"
             />
           </li>
         </ul>
@@ -81,13 +81,13 @@ const showMobileNav = ref(false);
     <div class="relative mb-6">
       <input
         type="text"
-        class="w-full rounded-full border border-neutral-200 bg-white py-2 pl-5 pr-14 text-neutral-500 outline-none placeholder:text-fs-1 placeholder:text-neutral-300"
+        class="w-full rounded-full border border-neutral-200 bg-white py-2 pr-14 pl-5 text-neutral-500 outline-hidden placeholder:text-fs-1 placeholder:text-neutral-300"
         placeholder="搜尋文章"
       />
       <img
         src="/icons/search.webp"
         alt="搜尋 icon"
-        class="absolute right-5 top-1/2 -translate-y-1/2"
+        class="absolute top-1/2 right-5 -translate-y-1/2"
       />
     </div>
 

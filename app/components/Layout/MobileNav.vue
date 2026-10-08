@@ -31,7 +31,7 @@ watch(route, () => close());
         class="fixed inset-0 z-50 block bg-primary-100 px-3 py-[76px] lg:hidden"
       >
         <button
-          class="absolute right-3 top-2 p-3"
+          class="absolute top-2 right-3 p-3"
           aria-label="關閉導覽選單"
           @click="close"
         >

@@ -13,7 +13,7 @@ onMounted(() => {
     class="mx-auto h-[240px] max-w-[1296px] bg-[url(/images/mobile/article/banner.webp)] bg-cover bg-center bg-no-repeat sm:h-[454px] sm:bg-[url(/images/desktop/article/banner.webp)]"
   ></section>
   <!-- 本文內容 -->
-  <section class="px-3 pb-[60px] pt-10 md:pb-[100px] md:pt-20">
+  <section class="px-3 pt-10 pb-[60px] md:pt-20 md:pb-[100px]">
     <div class="mx-auto max-w-[856px]">
       <nav
         aria-label="Breadcrumb"
@@ -129,21 +129,21 @@ onMounted(() => {
             <li class="py-2">
               <a
                 href="#"
-                class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                class="rounded-sm bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                 >#秘境尋蹤</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                class="rounded-sm bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                 >#露營點</a
               >
             </li>
             <li class="py-2">
               <a
                 href="#"
-                class="rounded bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
+                class="rounded-sm bg-primary-300 px-2 py-1 transition duration-300 hover:bg-primary hover:text-white"
                 >#山人</a
               >
             </li>
@@ -153,7 +153,7 @@ onMounted(() => {
         <!-- 底部白色漸層覆蓋層；只有未訂閱才顯示 -->
         <div
           v-if="!isSubscribed"
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-white to-transparent"
+          class="pointer-events-none absolute inset-x-0 bottom-0 h-full bg-linear-to-t/srgb from-white to-transparent"
         ></div>
       </div>
       <!-- 未訂閱時 CTA -->
@@ -208,7 +208,7 @@ onMounted(() => {
               </p>
               <button
                 type="button"
-                class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                class="self-end py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
               >
                 Read More
               </button>
@@ -234,7 +234,7 @@ onMounted(() => {
               </p>
               <button
                 type="button"
-                class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                class="self-end py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
               >
                 Read More
               </button>
@@ -260,7 +260,7 @@ onMounted(() => {
               </p>
               <button
                 type="button"
-                class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                class="self-end py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
               >
                 Read More
               </button>
@@ -298,7 +298,7 @@ onMounted(() => {
                 </p>
                 <button
                   type="button"
-                  class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                  class="self-end py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
                 >
                   Read More
                 </button>
@@ -322,7 +322,7 @@ onMounted(() => {
                 </p>
                 <button
                   type="button"
-                  class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                  class="self-end py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
                 >
                   Read More
                 </button>
@@ -346,7 +346,7 @@ onMounted(() => {
                 </p>
                 <button
                   type="button"
-                  class="Newsreader | self-end py-2 text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
+                  class="self-end py-2 font-newsreader text-[1.25rem] font-bold tracking-widest text-accent-200 transition duration-300 hover:text-accent-300"
                 >
                   Read More
                 </button>

@@ -1,0 +1,68 @@
+{
+  "name": "braces",
+  "version": "3.0.3",
+  "advisory": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+  "upstream": "https://github.com/micromatch/braces/issues/70",
+  "files": [
+    {
+      "path": "lib/parse.js",
+      "originalHash": "e572166565f15fa6ad9865ae49d678218e32aabfd1b3720f6d0d43d39800d310",
+      "patchedHash": "88864af664e1a0762baef8e1bad9447a8b48e2e52853c6916b39b0d68037a597",
+      "replacements": [
+        {
+          "before": "    if (value === CHAR_LEFT_PARENTHESES) {\n",
+          "after": "    if (value === CHAR_LEFT_PARENTHESES) {\n      if (stack.length >= 64) throw new RangeError('Maximum nesting depth exceeded');\n"
+        },
+        {
+          "before": "    if (value === CHAR_LEFT_CURLY_BRACE) {\n",
+          "after": "    if (value === CHAR_LEFT_CURLY_BRACE) {\n      if (stack.length >= 64) throw new RangeError('Maximum nesting depth exceeded');\n"
+        }
+      ]
+    },
+    {
+      "path": "lib/compile.js",
+      "originalHash": "dc98f22eee3d511785d92a00758d5f0d48efed5f5813bdecc2de430c529b5c9f",
+      "patchedHash": "489fb82a39abba7477c8e2680e4367b7ffdd308a91eddbf00bc66cfff04efdfc",
+      "replacements": [
+        {
+          "before": "  const walk = (node, parent = {}) => {\n",
+          "after": "  const walk = (node, parent = {}, depth = 0) => {\n    if (depth > 64) throw new RangeError('Maximum nesting depth exceeded');\n"
+        },
+        {
+          "before": "output += walk(child, node);",
+          "after": "output += walk(child, node, depth + 1);"
+        }
+      ]
+    },
+    {
+      "path": "lib/expand.js",
+      "originalHash": "41ccc196ebfa7b7781a634e721eb744e4e7bcb54cba427a7e3d6806a1b9e58f7",
+      "patchedHash": "be5c9c0f1d5d53a813e0b51475fa96240449dd02e015bc2ad1a5d6215faeb6fd",
+      "replacements": [
+        {
+          "before": "  const walk = (node, parent = {}) => {\n",
+          "after": "  const walk = (node, parent = {}, depth = 0) => {\n    if (depth > 64) throw new RangeError('Maximum nesting depth exceeded');\n"
+        },
+        {
+          "before": "walk(child, node);",
+          "after": "walk(child, node, depth + 1);"
+        }
+      ]
+    },
+    {
+      "path": "lib/stringify.js",
+      "originalHash": "379f22d77bfa1478341ccd49c5e4267464aabcbba03558bab332aac23fc6f23a",
+      "patchedHash": "4d8eef53522885cb8a465d9a389565cf49eb4f797cb05d276f26af646a831b6e",
+      "replacements": [
+        {
+          "before": "  const stringify = (node, parent = {}) => {\n",
+          "after": "  const stringify = (node, parent = {}, depth = 0) => {\n    if (depth > 64) throw new RangeError('Maximum nesting depth exceeded');\n"
+        },
+        {
+          "before": "output += stringify(child);",
+          "after": "output += stringify(child, {}, depth + 1);"
+        }
+      ]
+    }
+  ]
+}
