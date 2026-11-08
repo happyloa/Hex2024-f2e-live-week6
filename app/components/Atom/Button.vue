@@ -1,98 +1,53 @@
-<script setup>
-const props = defineProps({
-  /**
-   * 按鈕類型
-   * @type {'green' | 'gray'}
-   */
-  intent: {
-    type: String,
-    default: "green",
-  },
-  /**
-   * 按鈕尺寸
-   * @type {'lg' | 'sm'}
-   */
-  size: {
-    type: String,
-    default: "lg",
-  },
-  /**
-   * 按鈕文字
-   * @type {String}
-   */
-  text: {
-    type: String,
-    default: "透過 text prop 來傳入文字",
-  },
-  /**
-   * 是否有 icon
-   * @type {Boolean}
-   */
-  hasIcon: {
-    type: Boolean,
-    default: false,
-  },
-  /**
-   * 連結
-   * @type {String}
-   */
-  to: {
-    type: String,
-    default: "#",
-  },
-  target: {
-    type: String,
-    default: "_self",
-  },
-  /**
-   * 是否停用
-   * @type {Boolean}
-   */
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-});
-const { intent, size, text, hasIcon, to, target, disabled } = toRefs(props);
+<script setup lang="ts">
+const {
+  intent = "green",
+  size = "lg",
+  text = "透過 text prop 來傳入文字",
+  hasIcon = false,
+  to = "#",
+  target = "_self",
+  disabled = false,
+} = defineProps<{
+  intent?: "green" | "gray";
+  size?: "lg" | "sm";
+  text?: string;
+  hasIcon?: boolean;
+  to?: string;
+  target?: string;
+  disabled?: boolean;
+}>();
 
-/**
- * 動態產生按鈕 class
- */
-const btnClass = computed(() => {
-  const arr = [
-    // intent 顏色相關
-    intent.value === "green"
-      ? "bg-accent-200 hover:bg-accent-300 text-white"
-      : "bg-neutral-100 hover:bg-neutral-200 text-neutral-400 hover:text-neutral-500",
+const btnClass = computed(() => [
+  intent === "green"
+    ? "bg-accent-200 hover:bg-accent-300 text-white"
+    : "bg-neutral-100 hover:bg-neutral-200 text-neutral-400 hover:text-neutral-500",
 
-    // size 相關
-    size.value === "lg"
-      ? "px-6 py-4 text-h6 font-black md:text-h5"
-      : "px-5 py-3 text-h6 font-bold",
+  size === "lg"
+    ? "px-6 py-4 text-h6 font-black md:text-h5"
+    : "px-5 py-3 text-h6 font-bold",
 
-    // disabled 狀態
-    disabled.value
-      ? intent.value === "green"
-        ? "bg-neutral-200 pointer-events-none"
-        : "bg-neutral-100 text-neutral-300! pointer-events-none"
-      : "",
-  ];
-  return arr;
-});
+  disabled
+    ? intent === "green"
+      ? "bg-neutral-200 pointer-events-none"
+      : "bg-neutral-100 text-neutral-300! pointer-events-none"
+    : "",
+]);
 </script>
 
 <template>
   <NuxtLink
-    :to="to"
+    :to="disabled ? undefined : to"
     :target="target"
     class="flex items-center justify-center gap-3 rounded-full whitespace-nowrap transition duration-300"
     :class="btnClass"
     :aria-disabled="disabled"
-    tabindex="0"
+    :tabindex="disabled ? -1 : undefined"
+    @click="disabled && $event.preventDefault()"
   >
     {{ text }}
     <svg
       v-if="hasIcon"
+      aria-hidden="true"
       width="24"
       height="24"
       viewBox="0 0 24 24"

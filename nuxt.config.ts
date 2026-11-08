@@ -42,11 +42,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   nitro: {
-    externals: {
-      inline: ["nuxt"],
-    },
-  },
-  experimental: {
-    externalVue: false,
+    compressPublicAssets: true,
   },
 });

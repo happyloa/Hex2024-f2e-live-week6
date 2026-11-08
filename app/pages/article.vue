@@ -1,9 +1,8 @@
-<script setup>
-const isSubscribed = ref(false);
-
-onMounted(() => {
-  const saved = sessionStorage.getItem("isSubscribed");
-  isSubscribed.value = saved === "true";
+<script setup lang="ts">
+const { isSubscribed } = useDemoSubscription();
+useSeoMeta({
+  title: "私人島嶼的露營奇遇記 | 2024 切版直播班 - 內容訂閱網站",
+  ogTitle: "私人島嶼的露營奇遇記 | 2024 切版直播班 - 內容訂閱網站",
 });
 </script>
 
@@ -60,12 +59,17 @@ onMounted(() => {
               <source
                 media="(max-width: 768px)"
                 srcset="/images/mobile/article/content-1.webp"
+                width="351"
+                height="227"
               />
               <img
                 src="/images/desktop/article/content-1.webp"
                 alt="私人島嶼的露營奇遇記 1"
                 class="w-full"
                 loading="lazy"
+                width="856"
+                height="390"
+                decoding="async"
               />
             </picture>
           </figure>
@@ -81,12 +85,17 @@ onMounted(() => {
                 <source
                   media="(max-width: 768px)"
                   srcset="/images/mobile/article/content-2.webp"
+                  width="351"
+                  height="228"
                 />
                 <img
                   src="/images/desktop/article/content-2.webp"
                   alt="私人島嶼的露營奇遇記 2"
                   class="w-full"
                   loading="lazy"
+                  width="416"
+                  height="390"
+                  decoding="async"
                 />
               </picture>
             </figure>
@@ -95,12 +104,17 @@ onMounted(() => {
                 <source
                   media="(max-width: 768px)"
                   srcset="/images/mobile/article/content-3.webp"
+                  width="351"
+                  height="228"
                 />
                 <img
                   src="/images/desktop/article/content-3.webp"
                   alt="私人島嶼的露營奇遇記 3"
                   class="w-full"
                   loading="lazy"
+                  width="416"
+                  height="390"
+                  decoding="async"
                 />
               </picture>
             </figure>
@@ -116,12 +130,17 @@ onMounted(() => {
               <source
                 media="(max-width: 768px)"
                 srcset="/images/mobile/article/content-4.webp"
+                width="351"
+                height="227"
               />
               <img
                 src="/images/desktop/article/content-4.webp"
                 alt="私人島嶼的露營奇遇記 4"
                 class="w-full"
                 loading="lazy"
+                width="856"
+                height="390"
+                decoding="async"
               />
             </picture>
           </figure>
@@ -198,6 +217,9 @@ onMounted(() => {
               alt="週末說走就走露營記"
               class="shrink-0"
               loading="lazy"
+              width="196"
+              height="147"
+              decoding="async"
             />
             <div class="flex max-w-[635px] flex-col">
               <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -224,6 +246,9 @@ onMounted(() => {
               alt="城市野營日記"
               class="shrink-0"
               loading="lazy"
+              width="196"
+              height="147"
+              decoding="async"
             />
             <div class="flex max-w-[635px] flex-col">
               <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -250,6 +275,9 @@ onMounted(() => {
               alt="和寵物去露營 - 大自然之旅的雙倍體驗"
               class="shrink-0"
               loading="lazy"
+              width="196"
+              height="147"
+              decoding="async"
             />
             <div class="flex max-w-[635px] flex-col">
               <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -273,7 +301,7 @@ onMounted(() => {
       <ClientOnly>
         <swiper-container
           class="sm:hidden"
-          slides-per-view="1.1"
+          :slides-per-view="1.1"
           space-between="24"
           :autoplay="{
             delay: 3000,
@@ -288,6 +316,9 @@ onMounted(() => {
                 alt="週末說走就走露營記"
                 class="w-full"
                 loading="lazy"
+                width="325"
+                height="228"
+                decoding="async"
               />
               <div class="flex max-w-[635px] flex-col">
                 <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -312,6 +343,9 @@ onMounted(() => {
                 alt="城市野營日記"
                 class="w-full"
                 loading="lazy"
+                width="325"
+                height="228"
+                decoding="async"
               />
               <div class="flex max-w-[635px] flex-col">
                 <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -336,6 +370,9 @@ onMounted(() => {
                 alt="和寵物去露營 - 大自然之旅的雙倍體驗"
                 class="w-full"
                 loading="lazy"
+                width="325"
+                height="228"
+                decoding="async"
               />
               <div class="flex max-w-[635px] flex-col">
                 <h3 class="mb-2 text-h5 font-black text-neutral-500">

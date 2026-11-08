@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const showMobileNav = ref(false);
 </script>
 
@@ -14,8 +14,15 @@ const showMobileNav = ref(false);
               <source
                 media="(max-width: 640px)"
                 srcset="/images/logo-sm.webp"
+                width="68"
+                height="20"
               />
-              <img src="/images/logo.webp" alt="網站 Logo" />
+              <img
+                src="/images/logo.webp"
+                alt="網站 Logo"
+                width="96"
+                height="28"
+              />
             </picture>
           </figure>
         </NuxtLink>
@@ -24,6 +31,7 @@ const showMobileNav = ref(false);
             type="text"
             class="hidden max-w-[276px] rounded-full border border-neutral-200 bg-white py-3 pr-14 pl-5 text-neutral-500 outline-hidden placeholder:text-fs-1 placeholder:text-neutral-300 lg:block"
             placeholder="搜尋文章"
+            aria-label="搜尋文章"
           />
           <img
             src="/icons/search.webp"
@@ -69,6 +77,9 @@ const showMobileNav = ref(false);
       <button
         type="button"
         class="block p-3 lg:hidden"
+        aria-label="開啟導覽選單"
+        aria-controls="mobile-navigation"
+        :aria-expanded="showMobileNav"
         @click="showMobileNav = true"
       >
         <img src="/icons/menu.webp" alt="漢堡選單" />
@@ -83,6 +94,7 @@ const showMobileNav = ref(false);
         type="text"
         class="w-full rounded-full border border-neutral-200 bg-white py-2 pr-14 pl-5 text-neutral-500 outline-hidden placeholder:text-fs-1 placeholder:text-neutral-300"
         placeholder="搜尋文章"
+        aria-label="搜尋文章"
       />
       <img
         src="/icons/search.webp"

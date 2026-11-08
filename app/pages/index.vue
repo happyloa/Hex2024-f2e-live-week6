@@ -79,8 +79,24 @@ const current = computed(() => tabContents[activeTab.value]);
   <!-- Hero 區塊 -->
   <section class="h-[90vh] py-0 sm:h-screen lg:py-20">
     <div
-      class="mx-auto flex h-full max-w-[1296px] flex-col items-center justify-end bg-[url(/images/mobile/home/banner.webp)] bg-cover bg-center bg-no-repeat px-5 py-12 text-center text-white sm:items-start sm:justify-center sm:bg-[url(/images/desktop/home/banner.webp)] sm:px-[60px]"
+      class="relative isolate mx-auto flex h-full max-w-[1296px] flex-col items-center justify-end px-5 py-12 text-center text-white sm:items-start sm:justify-center sm:px-[60px]"
     >
+      <picture class="absolute inset-0 -z-10">
+        <source
+          media="(min-width: 640px)"
+          srcset="/images/desktop/home/banner.webp"
+          width="1296"
+          height="621"
+        />
+        <img
+          src="/images/mobile/home/banner.webp"
+          alt=""
+          width="375"
+          height="551"
+          fetchpriority="high"
+          class="h-full w-full object-cover"
+        />
+      </picture>
       <p class="mb-2 text-h6 font-bold sm:mb-3 sm:text-h5 sm:font-black">
         獻給新世代的生活風格誌
       </p>
@@ -212,6 +228,10 @@ const current = computed(() => tabContents[activeTab.value]);
           <img
             src="/images/desktop/home/articles-1.webp"
             alt="私人島嶼的露營奇遇記"
+            width="404"
+            height="200"
+            loading="lazy"
+            decoding="async"
           />
           <div>
             <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -232,6 +252,10 @@ const current = computed(() => tabContents[activeTab.value]);
           <img
             src="/images/desktop/home/articles-2.webp"
             alt="窺探米其林三星主廚的絕密手藝"
+            width="404"
+            height="200"
+            loading="lazy"
+            decoding="async"
           />
           <div>
             <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -278,6 +302,10 @@ const current = computed(() => tabContents[activeTab.value]);
                 <img
                   src="/images/mobile/home/articles-1.webp"
                   alt="私人島嶼的露營奇遇記"
+                  width="324"
+                  height="200"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div>
                   <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -302,6 +330,10 @@ const current = computed(() => tabContents[activeTab.value]);
                 <img
                   src="/images/mobile/home/articles-2.webp"
                   alt="窺探米其林三星主廚的絕密手藝"
+                  width="324"
+                  height="200"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div>
                   <h3 class="mb-2 text-h5 font-black text-neutral-500">
@@ -435,18 +467,26 @@ const current = computed(() => tabContents[activeTab.value]);
       alt="母親節活動裝飾 1"
       class="absolute -bottom-2 left-[150px] hidden lg:block xl:left-[324px]"
       loading="lazy"
+      width="217"
+      height="81"
+      decoding="async"
     />
     <figure>
       <picture>
         <source
           media="(max-width: 1024px)"
           srcset="/images/mobile/home/bg-2.webp"
+          width="160"
+          height="104"
         />
         <img
           src="/images/desktop/home/bg-2.webp"
           alt="母親節活動裝飾 2"
           class="absolute -right-[48px] -bottom-2 lg:right-[50px] xl:right-[280px]"
           loading="lazy"
+          width="300"
+          height="196"
+          decoding="async"
         />
       </picture>
     </figure>
@@ -496,21 +536,37 @@ const current = computed(() => tabContents[activeTab.value]);
               src="/images/desktop/home/hots-1.webp"
               alt="大家都在看 1"
               class="rounded-l-[20px] rounded-r"
+              width="211"
+              height="232"
+              loading="lazy"
+              decoding="async"
             />
             <img
               src="/images/desktop/home/hots-2.webp"
               alt="大家都在看 2"
               class="rounded-sm"
+              width="212"
+              height="232"
+              loading="lazy"
+              decoding="async"
             />
             <img
               src="/images/desktop/home/hots-3.webp"
               alt="大家都在看 3"
               class="rounded-sm"
+              width="212"
+              height="232"
+              loading="lazy"
+              decoding="async"
             />
             <img
               src="/images/desktop/home/hots-4.webp"
               alt="大家都在看 4"
               class="rounded-l rounded-r-[20px]"
+              width="211"
+              height="232"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <!-- 標籤與 CTA -->
@@ -587,6 +643,10 @@ const current = computed(() => tabContents[activeTab.value]);
               <img
                 :src="item.mobileImg"
                 :alt="item.title"
+                width="292"
+                height="157"
+                loading="lazy"
+                decoding="async"
                 class="mb-4 w-full rounded-sm"
               />
               <ul class="mb-4 flex gap-2.5 text-xs font-bold text-primary">
@@ -644,12 +704,17 @@ const current = computed(() => tabContents[activeTab.value]);
                 <source
                   media="(max-width: 768px)"
                   srcset="/images/mobile/home/life-1.webp"
+                  width="351"
+                  height="192"
                 />
                 <img
                   src="/images/desktop/home/life-1.webp"
                   alt="品味生活 1"
                   class="w-full"
                   loading="lazy"
+                  width="392"
+                  height="232"
+                  decoding="async"
                 />
               </picture>
             </figure>
@@ -694,12 +759,17 @@ const current = computed(() => tabContents[activeTab.value]);
                 <source
                   media="(max-width: 768px)"
                   srcset="/images/mobile/home/life-2.webp"
+                  width="351"
+                  height="192"
                 />
                 <img
                   src="/images/desktop/home/life-2.webp"
                   alt="品味生活 2"
                   class="w-full"
                   loading="lazy"
+                  width="392"
+                  height="232"
+                  decoding="async"
                 />
               </picture>
             </figure>
@@ -744,12 +814,17 @@ const current = computed(() => tabContents[activeTab.value]);
                 <source
                   media="(max-width: 768px)"
                   srcset="/images/mobile/home/life-3.webp"
+                  width="351"
+                  height="192"
                 />
                 <img
                   src="/images/desktop/home/life-3.webp"
                   alt="品味生活 3"
                   class="w-full"
                   loading="lazy"
+                  width="392"
+                  height="232"
+                  decoding="async"
                 />
               </picture>
             </figure>

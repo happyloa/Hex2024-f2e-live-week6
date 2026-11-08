@@ -29,12 +29,17 @@ useSeoMeta({
             <source
               media="(max-width: 640px)"
               srcset="/images/mobile/about/about-1.webp"
+              width="375"
+              height="200"
             />
             <img
               src="/images/desktop/about/about-1.webp"
               alt="關於我們圖片 1"
               class="w-full flex-1"
               loading="lazy"
+              width="636"
+              height="390"
+              decoding="async"
             />
           </picture>
         </figure>
@@ -82,12 +87,17 @@ useSeoMeta({
             <source
               media="(max-width: 640px)"
               srcset="/images/mobile/about/about-2.webp"
+              width="375"
+              height="200"
             />
             <img
               src="/images/desktop/about/about-2.webp"
               alt="關於我們圖片 2"
               class="w-full flex-1"
               loading="lazy"
+              width="636"
+              height="390"
+              decoding="async"
             />
           </picture>
         </figure>

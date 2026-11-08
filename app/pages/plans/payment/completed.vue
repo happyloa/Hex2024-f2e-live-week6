@@ -1,15 +1,11 @@
-<script setup>
+<script setup lang="ts">
+const { subscribe } = useDemoSubscription();
 useSeoMeta({
   title: "付款成功 | 2024 切版直播班 - 內容訂閱網站",
   ogTitle: "付款成功 | 2024 切版直播班 - 內容訂閱網站",
 });
 
-onMounted(() => {
-  // 進到這頁就把訂閱狀態寫成 true
-  if (typeof window !== "undefined") {
-    sessionStorage.setItem("isSubscribed", "true");
-  }
-});
+onMounted(subscribe);
 </script>
 
 <template>
