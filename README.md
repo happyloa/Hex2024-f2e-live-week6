@@ -31,6 +31,8 @@ npm run dev
 
 Node.js 部署於建置後執行 `node .output/server/index.mjs`；純展示網站也可直接部署 `npm run generate` 的靜態輸出。
 
+Cloudflare Pages 使用 `npm run build` 與輸出目錄 `dist`。`wrangler.jsonc` 記錄正式與預覽部署共用的相容日期，並啟用 Nuxt 伺服器所需的 `nodejs_compat`；只設定 Nuxt 的 `compatibilityDate` 不會替 Pages 部署開啟此旗標。
+
 ## 結構
 
 ```text
@@ -43,6 +45,7 @@ app/
 └── pages/                  頁面與檔案路由
 public/                     WebP 圖片、圖示與網站圖示
 nuxt.config.ts              Nuxt 與 Tailwind Vite 整合
+wrangler.jsonc              Cloudflare Pages 輸出目錄與執行環境
 ```
 
 頁面包含 `/`、`/about`、`/article`、`/login`、`/register`、`/plans`、`/plans/payment` 與 `/plans/payment/completed`。
